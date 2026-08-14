@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: #f5f5f5;
+
+            padding: 35px;
+        }
+
+
+        .product-section {
+
+            max-width: 825px;
+
+            margin: auto;
+
+            padding: 8px 12px 22px;
+
+            background-color: #f4f4f4;
+        }
+
+        .product-section h1 {
+
+            text-align: center;
+
+            font-size: 20px;
+
+            color: #222;
+
+            margin-bottom: 12px;
+        }
+
+        .product-container {
+
+            display: flex;
+
+            /* Items move to next row
+               when required */
+            flex-wrap: wrap;
+
+            /* Space between products */
+            gap: 12px;
+
+            align-items: stretch;
+        }
+
+
+        .product-card {
+
+            flex-grow: 1;
+
+            /* Starting width */
+            flex-basis: 220px;
+
+            min-height: 210px;
+
+            background-color: white;
+
+            border: 1px solid #ddd;
+
+            border-radius: 7px;
+
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+            overflow: hidden;
+
+            /* Nested Flexbox */
+            display: flex;
+
+            flex-direction: column;
+
+            text-align: center;
+        }
+
+
+        .featured {
+
+            /* Featured product gets
+               more available space */
+            flex-grow: 1.3;
+        }
+
+        .product-image {
+
+            height: 135px;
+
+            background-color: #fafafa;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: #999;
+
+            font-size: 14px;
+        }
+
+
+        .product-details {
+
+            /* Nested Flexbox */
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            align-items: center;
+
+            flex-grow: 1;
+
+            padding: 8px;
+        }
+
+
+        .product-details h2 {
+
+            font-size: 14px;
+
+            color: #222;
+
+            margin-bottom: 5px;
+        }
+
+
+        .product-details p {
+
+            font-size: 12px;
+
+            color: #777;
+
+            margin-bottom: 5px;
+        }
+
+
+        .price {
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            color: #e85d04;
+        }
+
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 20px;
+            }
+
+
+            .product-container {
+
+                flex-direction: column;
+            }
+
+
+            .product-card {
+
+                width: 100%;
+
+                flex-basis: auto;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="product-section">
+
+
+        <!-- Heading -->
+
+        <h1>
+            Our Products
+        </h1>
+
+
+        <div class="product-container">
+
+
+            <div class="product-card featured">
+
+
+                <div class="product-image">
+
+                    <span>
+                        Featured Product
+                    </span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h2>
+                        Featured Headphones
+                    </h2>
+
+                    <p>
+                        High-quality sound with noise cancellation.
+                    </p>
+
+                    <div class="price">
+                        ₹199
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="product-card">
+
+
+                <div class="product-image">
+
+                    <span>
+                        Product 1
+                    </span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h2>
+                        Wireless Earbuds
+                    </h2>
+
+                    <p>
+                        Compact and powerful sound.
+                    </p>
+
+                    <div class="price">
+                        ₹799
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="product-card">
+
+
+                <div class="product-image">
+
+                    <span>
+                        Product 2
+                    </span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h2>
+                        Smart Watch
+                    </h2>
+
+                    <p>
+                        Track fitness and notifications.
+                    </p>
+
+                    <div class="price">
+                        ₹1999
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

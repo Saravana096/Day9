@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 15 - Drawing Board</h1>
+
+    <canvas
+        id="canvas"
+        width="600"
+        height="400"
+        style="border:1px solid black;">
+    </canvas>
+
+    <script>
+
+        var canvas = document.getElementById("canvas");
+
+        var context = canvas.getContext("2d");
+
+        var drawing = false;
+
+        canvas.addEventListener("mousedown", startDrawing);
+
+        canvas.addEventListener("mouseup", stopDrawing);
+
+        canvas.addEventListener("mousemove", draw);
+
+        function startDrawing(event) {
+
+            drawing = true;
+
+            context.beginPath();
+
+            context.moveTo(event.offsetX, event.offsetY);
+
+        }
+
+        function stopDrawing() {
+
+            drawing = false;
+
+        }
+
+        function draw(event) {
+
+            if (!drawing) {
+
+                return;
+
+            }
+
+            context.lineTo(event.offsetX, event.offsetY);
+
+            context.stroke();
+
+        }
+
+    </script>
+</body>
+</html>

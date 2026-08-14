@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Courses</title>
+</head>
+<body>
+    <h2>Search Courses</h2>
+
+    <form>
+
+        <label>Search:</label><br><br>
+
+        <input
+            type="text"
+            list="courses"
+            placeholder="Search here..."
+            required>
+
+        <datalist id="courses">
+
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value="React">
+            <option value="Node.js">
+
+        </datalist>
+
+        <br><br>
+
+        <input
+            type="submit"
+            value="Search">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:100%;
+            min-height:100vh;
+            background:linear-gradient(to right,#7b2cbf,#3a86ff);
+            color:white;
+        }
+
+        header{
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1{
+            font-size:42px;
+        }
+
+        header p{
+            margin-top:8px;
+            font-size:18px;
+        }
+
+        .card{
+            width:80%;
+            margin:20px auto;
+            background:rgba(255,255,255,0.15);
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+        }
+
+        .card h2{
+            margin-bottom:15px;
+            font-size:32px;
+        }
+
+        .card p{
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            font-size:16px;
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+                font-size:32px;
+            }
+
+            header p{
+                font-size:16px;
+            }
+
+            .card{
+                width:90%;
+            }
+
+            .card h2{
+                font-size:26px;
+            }
+
+            .card p{
+                font-size:16px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+
+            <h1>John Doe</h1>
+
+            <p>Web Developer | Designer | Innovator</p>
+
+        </header>
+
+        <section class="card">
+
+            <h2>ABOUT ME</h2>
+
+            <p>
+                I specialize in front-end and back-end development,
+                crafting beautiful and functional web experiences.
+                My passion is turning creative ideas into reality.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>SKILLS</h2>
+
+            <p>
+                HTML, CSS, JavaScript
+            </p>
+
+            <p>
+                React, Node.js, Django
+            </p>
+
+            <p>
+                UI/UX Design
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>CONTACT</h2>
+
+            <p>Email: johndoe@example.com</p>
+
+            <p>LinkedIn: linkedin.com/in/johndoe</p>
+
+        </section>
+
+        <footer>
+
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+
+        </footer>
+
+    </div>
+</body>
+</html>

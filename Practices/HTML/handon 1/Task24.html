@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 24</title>
+</head>
+<body>
+    <!--Make a timetable using rowspan to merge cells (e.g., Lunch break row 
+    spanning all days). Explain your logic.-->
+
+    <h1>School Timetable</h1>
+
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+        </tr>
+
+        <tr>
+            <td>9AM TO 10AM</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>Javascript</td>
+        </tr>
+
+        <tr>
+            <td>10AM TO 11AM</td>
+            <td rowspan="2">Lunch Break</td>
+            <td>Python</td>
+            <td>Java</td>
+        </tr>
+
+        <tr>
+            <td>11AM TO 12AM</td>
+            <td>SQL</td>
+            <td>React</td>
+        </tr>
+
+    </table>
+
+    <p>
+        <strong>Logic:</strong> The <strong>rowspan</strong> attribute is used to merge cells vertically.
+        Here, the <strong>Lunch Break</strong> cell spans two rows, so it occupies the same column for both time 
+        slots.
+    </p>
+
+    <hr>
+
+    <h1>SCHOOL TIMETABLE</h1>
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <td>09:00AM to 09:40AM</td>
+            <td rowspan="2">PT</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Tamil</td>
+            <td>Biology</td>
+        </tr>
+
+        <tr>
+            <td>09:40AM to 10:30AM</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td rowspan="2">Biology</td>
+            <td>Tamil</td>
+        </tr>
+
+        <tr>
+            <td>10:30AM to 11:15AM</td>
+            <td>Biology</td>
+            <td>Tamil</td>
+            <td>English</td>
+            <td>PT</td>
+        </tr>
+
+        <tr>
+            <th>11:15AM to 12:05PM</th>
+            <th colspan="5" rowspan="2">Lunch Break</th>
+        </tr>
+
+        <tr>
+            <th>12:05PM to 01:00PM</th>
+        </tr>
+
+        <tr>
+            <td>01:00PM to 02:00PM</td>
+            <td>Tamil</td>
+            <td>Maths</td>
+            <td>Biology</td>
+            <td>English</td>
+            <td>PT</td>
+        </tr>
+    </table>
+
+    <p><strong>Logic:</strong> The <strong>Colspan </strong> attribute is used to merged the column from <strong><mark>
+    left to right</mark></strong> (Eg.)<strong>Lunch Break</strong> cell spans five column & two rows, so it 
+    occupies the same column and row for both time slots, <br>and <strong>rowspan</strong> is merged to rows from
+    <strong> <mark>top to bottom</mark></strong> (Eg.) PT & Biology cell spans two rows, so it 
+    occupies the same for both time slots. </p>
+
+    <hr>
+</body>
+</html>

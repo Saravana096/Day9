@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+
+        .navbar {
+
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            padding: 18px 50px;
+
+            background: linear-gradient(
+                90deg,
+                #1e3a8a,
+                #2563eb
+            );
+        }
+
+        .logo {
+
+            color: white;
+
+            font-size: 26px;
+
+            font-weight: bold;
+        }
+
+        .nav-links {
+
+            display: flex;
+
+            /* Space between links */
+            gap: 30px;
+
+            list-style: none;
+        }
+
+
+        .nav-links a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+
+            color: #facc15;
+        }
+
+        .nav-button {
+
+            text-decoration: none;
+
+            background-color: white;
+
+            color: #2563eb;
+
+            padding: 10px 20px;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-button:hover {
+
+            background-color: #facc15;
+
+            color: #222;
+        }
+
+        .content {
+
+            text-align: center;
+
+            padding: 80px 20px;
+        }
+
+
+        .content h1 {
+
+            color: #1e293b;
+
+            margin-bottom: 15px;
+        }
+
+
+        .content p {
+
+            color: #64748b;
+
+            font-size: 17px;
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+
+                flex-direction: column;
+
+                gap: 20px;
+
+                padding: 20px;
+            }
+
+
+            .nav-links {
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 15px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+            MyWebsite
+        </div>
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Services</a>
+            </li>
+
+            <li>
+                <a href="#">Projects</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+        <a href="#" class="nav-button">
+            Get Started
+        </a>
+
+
+    </nav>
+
+    <main class="content">
+
+        <h1>
+            Welcome to MyWebsite
+        </h1>
+
+        <p>
+            This navigation bar is created using CSS Flexbox.
+        </p>
+
+    </main>
+</body>
+</html>

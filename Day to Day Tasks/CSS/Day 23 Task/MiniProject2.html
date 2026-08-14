@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Layout</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#2f4f4f;
+            color:white;
+            height:12vh;                 /* vh */
+            width:90vw;                  /* vw */
+            margin:30px auto;            /* px */
+            display:flex;
+            align-items:center;
+            padding-left:20px;           /* px */
+        }
+
+        header h1{
+            font-size:2rem;              /* rem */
+        }
+
+        .container{
+            width:90vw;                  /* vw */
+            margin:auto;
+        }
+
+        article{
+            background:white;
+            padding:2em;                 /* em */
+            margin-bottom:30px;          /* px */
+            border-radius:10px;
+        }
+
+        article h2{
+            font-size:2rem;              /* rem */
+            margin-bottom:1em;           /* em */
+        }
+
+        article p.author{
+            font-size:1.1rem;            /* rem */
+            color:gray;
+            margin-bottom:1.5em;         /* em */
+        }
+
+        article p.content{
+            font-size:1em;               /* em */
+            line-height:1.8em;
+        }
+
+        footer{
+            width:90vw;
+            margin:auto;
+            padding:20px;                /* px */
+            background:#2f4f4f;
+            color:white;
+            text-align:center;
+            font-size:1rem;
+        }
+
+    </style>
+</head>
+<body>
+     <header>
+
+        <h1>My Tech Blog</h1>
+
+    </header>
+
+    <div class="container">
+
+        <article>
+
+            <h2>How Technology is Changing the World</h2>
+
+            <p class="author">
+                By John Doe - Feb 2025
+            </p>
+
+            <p class="content">
+                Technology is evolving at an unprecedented pace, shaping the way we live,
+                work, and interact with the world. From Artificial Intelligence and Cloud
+                Computing to the Internet of Things, innovation continues to transform
+                every industry and improve our daily lives.
+            </p>
+
+        </article>
+
+    </div>
+
+    <footer>
+
+        &copy; 2025 My Tech Blog. All Rights Reserved.
+
+    </footer>
+</body>
+</html>

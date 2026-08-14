@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-Do List</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #FAF3DD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 450px;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            list-style: none;
+            
+        }
+
+        li {
+            background: #ecf0f1;
+            margin: 12px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transform: translateX(8px);
+        }
+
+        input {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <ul>
+            <li>
+                <input type="checkbox">
+                Wake Up at 6.00 AM
+            </li>
+
+            <li>
+                <input type="checkbox">
+                Exercise 30 minutes
+            </li>
+
+            <li>
+                <input type="checkbox">
+                Study HTML and CSS
+            </li>
+
+            <li>
+                <input type="checkbox">
+                Build Mini Project
+            </li>
+
+            <li>
+                <input type="checkbox">
+                Sleep at 11.00 PM
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

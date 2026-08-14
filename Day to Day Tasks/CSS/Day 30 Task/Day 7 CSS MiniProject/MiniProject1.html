@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1 - Navigation Bar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        /* Navigation Bar */
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:#333;
+            padding:20px 40px;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .menu{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        .menu a:hover{
+            color:gold;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:500px;
+        }
+
+        .hero h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:20px;
+        }
+
+        .hero button{
+            padding:12px 25px;
+            font-size:18px;
+            border:none;
+            background:#333;
+            color:white;
+            cursor:pointer;
+        }
+
+        .hero button:hover{
+            background:gold;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            MyLogo
+        </div>
+
+        <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>Welcome to My Website</h1>
+
+        <p>Learn CSS Flexbox Navigation Bar</p>
+
+        <button>Get Started</button>
+
+    </section>
+</body>
+</html>

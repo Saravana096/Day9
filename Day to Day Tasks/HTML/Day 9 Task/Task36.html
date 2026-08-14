@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Future Date</title>
+</head>
+<body>
+    <h2>Select a Future Date</h2>
+
+    <form>
+
+        <label>Select Date:</label>
+
+        <input
+            type="date"
+            id="futureDate"
+            required>
+
+        <br><br>
+
+        <input
+            type="submit"
+            value="Submit">
+
+    </form>
+
+    <script>
+
+        // Get today's date
+        let today = new Date();
+
+        // Convert to YYYY-MM-DD format
+        let year = today.getFullYear();
+        let month = String(today.getMonth() + 1).padStart(2, '0');
+        let day = String(today.getDate() + 1).padStart(2, '0');
+
+        let minDate = year + "-" + month + "-" + day;
+
+        // Allow only future dates
+        document.getElementById("futureDate").min = minDate;
+
+    </script>
+</body>
+</html>

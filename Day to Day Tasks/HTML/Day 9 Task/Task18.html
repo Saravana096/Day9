@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 18 - Mini Kanban Board</h1>
+
+    <table>
+
+        <tr>
+
+            <th>To Do</th>
+
+            <th>In Progress</th>
+
+            <th>Done</th>
+
+        </tr>
+
+        <tr>
+
+            <td
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                style="width:200px; height:200px; border:1px solid black; vertical-align:top;">
+
+                <div
+                    id="task1"
+                    draggable="true"
+                    ondragstart="drag(event)">
+                    Learn HTML
+                </div>
+
+                <br>
+
+                <div
+                    id="task2"
+                    draggable="true"
+                    ondragstart="drag(event)">
+                    Practice JavaScript
+                </div>
+
+            </td>
+
+            <td
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                style="width:200px; height:200px; border:1px solid black; vertical-align:top;">
+            </td>
+
+            <td
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                style="width:200px; height:200px; border:1px solid black; vertical-align:top;">
+            </td>
+
+        </tr>
+
+    </table>
+
+    <script>
+
+        function allowDrop(event) {
+
+            event.preventDefault();
+
+        }
+
+        function drag(event) {
+
+            event.dataTransfer.setData("text", event.target.id);
+
+        }
+
+        function drop(event) {
+
+            event.preventDefault();
+
+            var data = event.dataTransfer.getData("text");
+
+            event.target.appendChild(document.getElementById(data));
+
+        }
+
+    </script>
+</body>
+</html>

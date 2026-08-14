@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+
+    <style>
+        /*Task 19*/
+        * {
+            box-sizing: border-box;
+        }
+
+        *::selection {
+            background-color: orange;
+            color: white;
+        }
+
+        /*Task 14*/
+        p{
+            line-height: 1.6;
+        }
+
+        /*Task 15*/
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightgrey;
+        }
+
+        /*Task 16*/
+        #main-title {
+            text-align: center;
+            color: red;
+        }
+
+        /*Task 17*/
+        .bordered {
+            border: 2px solid black;
+            overflow: auto;
+        }
+
+        /*Task 18*/
+
+        form [type=text] {
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /*Task 20*/
+        footer span {
+            font-size: 14px;
+            color: gray;
+        }
+
+        /*Task 21*/
+        section > p {
+            color: darkgreen;
+        }
+
+        /*Task 22*/
+        h2 ~ p {
+            font-style: oblique;
+        }
+
+        /*Task 23*/
+        form input:focus {
+            background-color: lightyellow;
+        }
+
+        /*Task 24*/
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /*Task 25*/
+        p::first-letter {
+            text-transform: uppercase;
+            font-size: 200%;
+        }
+
+        /*Task 26*/
+        .para::selection {
+            background-color: orange;
+            color: white;
+        }
+
+        #right {
+            float: right;
+            
+        }
+    </style>
+</head>
+<body>
+    <header id="main-title">
+
+    <h1>Birthday Invites</h1>
+
+    </header>
+
+    <p>You are warmly invited to celebrate my birthday with us. Join us for an evening filled with fun, 
+    delicious food, exciting games, music, laughter, and unforgettable memories. Your presence will make 
+    this special day even more meaningful.</p>
+
+    <div class="box">
+
+    <p>The birthday celebration will take place at SK Party Hall, Chennai. The event begins at 6:00 PM 
+    and continues with dinner, games, and entertainment for everyone.</p>
+
+    </div>
+
+    <div class="bordered">
+
+    <img src="Birthday.jpg" width="200px" height="200px" alt="Birthday Invites">
+
+    <img id="right" src="images.jpg" width="300px" height="300px" alt="images">
+
+    </div>
+
+    <section>
+
+        <p>
+            Your presence is the greatest gift we could ask for. Come with your family and friends to make 
+            this birthday celebration joyful, memorable, and filled with happiness.
+        </p>
+
+        <p>
+            Thank you for being a part of this wonderful celebration. We look forward to creating beautiful 
+            memories together and sharing laughter, love, and happiness on this special day.
+        </p>
+
+    </section>
+
+    <table border="1">
+
+        <tr>
+
+            <th>Event Details</th>
+            <th>Information</th>
+
+        </tr>
+
+        <tr>
+            <td>Event</td>
+            <td>Birthday Celebration</td>
+        </tr>
+
+        <tr>
+            <td>Date</td>
+            <td>15 August 2026</td>
+        </tr>
+
+        <tr>
+            <td>Time</td>
+            <td>6:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Place</td>
+            <td>Chennai</td>
+        </tr>
+    </table>
+
+    <h2>Register Events</h2>
+
+    <p>
+        Please complete the registration form below with your name and email address. A confirmation message will be sent after successful registration.
+    </p>
+
+    <form>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your Name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+
+        <input type="submit" value="Register"><br><br>
+
+    </form>
+
+    <p class="para">
+        Thank you for accepting our invitation. We look forward to celebrating this wonderful day with you and creating joyful memories together. Your presence will make this birthday celebration even more special.
+    </p>
+
+    <footer>
+
+        <span>&copy; 2026 Saravanakumar V. All Rights Reserved.</span>
+
+    </footer>
+</body>
+</html>

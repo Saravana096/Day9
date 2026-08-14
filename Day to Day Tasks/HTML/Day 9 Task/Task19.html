@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+     <h1>Task 19 - Memory Game</h1>
+
+    <p>Wins: <span id="wins">0</span></p>
+
+    <p>Losses: <span id="losses">0</span></p>
+
+    <button onclick="playGame()">
+        Play Game
+    </button>
+
+    <script>
+
+        var wins = localStorage.getItem("wins") || 0;
+
+        var losses = localStorage.getItem("losses") || 0;
+
+        document.getElementById("wins").innerHTML = wins;
+
+        document.getElementById("losses").innerHTML = losses;
+
+        function playGame() {
+
+            var result = Math.random();
+
+            if (result > 0.5) {
+
+                wins++;
+
+                localStorage.setItem("wins", wins);
+
+            }
+
+            else {
+
+                losses++;
+
+                localStorage.setItem("losses", losses);
+
+            }
+
+            document.getElementById("wins").innerHTML = wins;
+
+            document.getElementById("losses").innerHTML = losses;
+
+        }
+
+    </script>
+</body>
+</html>

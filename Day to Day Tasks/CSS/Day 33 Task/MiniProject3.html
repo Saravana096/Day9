@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: #f1f5f9;
+
+            padding: 50px 20px;
+        }
+
+        .heading {
+            text-align: center;
+
+            margin-bottom: 35px;
+        }
+
+
+        .heading h1 {
+            color: #1e293b;
+
+            margin-bottom: 10px;
+        }
+
+
+        .heading p {
+            color: #64748b;
+        }
+
+
+        .card-container {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 25px;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            align-items: flex-start;
+        }
+
+
+        .card {
+            flex-basis: 300px;
+
+            flex-grow: 1;
+
+            background-color: white;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+            display: flex;
+
+            flex-direction: column;
+
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+        }
+
+        .card-image {
+
+            height: 180px;
+
+            background: linear-gradient(
+                135deg,
+                #2563eb,
+                #7c3aed
+            );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: white;
+
+            font-size: 50px;
+        }
+
+        .card-content {
+
+            padding: 25px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            flex-grow: 1;
+        }
+
+
+        .card-content h2 {
+
+            color: #1e293b;
+
+            margin-bottom: 10px;
+        }
+
+
+        .card-content p {
+
+            color: #64748b;
+
+            line-height: 1.6;
+
+            margin-bottom: 20px;
+        }
+
+        .card-button {
+
+            align-self: flex-start;
+
+            text-decoration: none;
+
+            background-color: #2563eb;
+
+            color: white;
+
+            padding: 10px 20px;
+
+            border-radius: 6px;
+
+            transition: 0.3s;
+        }
+
+
+        .card-button:hover {
+
+            background-color: #1d4ed8;
+        }
+
+
+        .special-card {
+
+            align-self: flex-end;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .card-container {
+
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+
+            .card {
+
+                width: 100%;
+
+                max-width: 400px;
+
+                flex-basis: auto;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+
+        <h1>
+            Our Products
+        </h1>
+
+        <p>
+            Explore our responsive product cards
+        </p>
+
+    </div>
+
+    <div class="card-container">
+
+
+        <div class="card">
+
+            <div class="card-image">
+                💻
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Laptop
+                </h2>
+
+                <p>
+                    Powerful laptop designed for
+                    professional work and entertainment.
+                </p>
+
+                <a href="#" class="card-button">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-image">
+                📱
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Smartphone
+                </h2>
+
+                <p>
+                    Modern smartphone with a powerful
+                    processor and excellent camera.
+                </p>
+
+                <a href="#" class="card-button">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card special-card">
+
+            <div class="card-image">
+                🎧
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Headphones
+                </h2>
+
+                <p>
+                    Wireless headphones with high-quality
+                    sound and comfortable design.
+                </p>
+
+                <a href="#" class="card-button">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

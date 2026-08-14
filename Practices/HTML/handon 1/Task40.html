@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Form</title>
+</head>
+<body>
+    <!--Create a delivery form where the user selects payment method via 
+    dropdown and writes special instructions in a textarea.-->
+
+    <h1>Delivery Form</h1>
+
+    <form>
+        <label for="payment">Choose a Payment</label><br>
+        <select id="payment" name="payment">
+            <option>Gpay</option>
+            <option>Phonepe</option>
+            <option>Credit card</option>
+            <option>Debit card</option>
+            <option>Net banking</option>
+        </select><br><br>
+
+        <label for="instructions">Special Instructions</label><br>
+        <textarea id="instructions" name="instructions" rows="5" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

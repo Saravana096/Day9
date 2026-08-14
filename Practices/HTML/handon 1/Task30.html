@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 30</title>
+</head>
+<body>
+    <!--Build a two-step form: first step asks for personal details, second step asks 
+    for address. Use fieldset and legend.-->
+
+    <h1>Two-Step Form</h1>
+    
+    <form>
+        <fieldset>
+        <legend>Step 1 - Personal Details</legend>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone">
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Step 2 - Address</legend>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br><br>
+
+            <label for="pincode">Pincode</label><br>
+            <input type="text" id="pincode" name="pincode">
+    </fieldset><br>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+</body>
+</html>

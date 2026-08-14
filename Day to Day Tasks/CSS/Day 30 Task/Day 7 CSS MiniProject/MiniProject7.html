@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Login & Signup Forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f1f5f9;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 30px;
+        }
+
+
+        .forms-container {
+
+            display: flex;
+
+            gap: 30px;
+
+            width: 100%;
+
+            max-width: 900px;
+        }
+
+
+
+        .form-card {
+
+            flex: 1;
+
+            background-color: white;
+
+            padding: 35px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+
+
+        .form-card h2 {
+
+            text-align: center;
+
+            margin-bottom: 25px;
+
+            color: #1e293b;
+        }
+
+
+   
+
+        .form-group {
+
+            margin-bottom: 18px;
+        }
+
+
+        .form-group label {
+
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: #334155;
+
+            font-weight: bold;
+        }
+
+
+
+        .form-group input {
+
+            width: 100%;
+
+            padding: 12px;
+
+            border: 1px solid #cbd5e1;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+
+  
+
+        .form-group input:focus {
+
+            border-color: #2563eb;
+        }
+
+
+
+        .form-card button {
+
+            width: 100%;
+
+            padding: 12px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background-color: #2563eb;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+
+        .form-card button:hover {
+
+            background-color: #1d4ed8;
+
+            transform: translateY(-2px);
+        }
+
+
+        .signup button {
+
+            background-color: #16a34a;
+        }
+
+
+        .signup button:hover {
+
+            background-color: #15803d;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .forms-container {
+
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="forms-container">
+
+        <div class="form-card login">
+
+            <h2>
+                Login
+            </h2>
+
+
+            <form>
+
+
+             
+
+                <div class="form-group">
+
+                    <label for="login-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="Enter your email"
+                    >
+
+                </div>
+
+
+               
+
+                <div class="form-group">
+
+                    <label for="login-password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter your password"
+                    >
+
+                </div>
+
+
+              
+
+                <button type="submit">
+                    Login
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+       
+
+        <div class="form-card signup">
+
+            <h2>
+                Sign Up
+            </h2>
+
+
+            <form>
+
+
+                
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                    >
+
+                </div>
+
+
+             
+
+                <div class="form-group">
+
+                    <label for="signup-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signup-email"
+                        placeholder="Enter your email"
+                    >
+
+                </div>
+
+
+           
+
+                <div class="form-group">
+
+                    <label for="signup-password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="signup-password"
+                        placeholder="Create a password"
+                    >
+
+                </div>
+
+
+                
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

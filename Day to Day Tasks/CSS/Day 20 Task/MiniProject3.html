@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        /* Header */
+
+        header{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        header p{
+            margin-top:10px;
+        }
+
+        /* Sections */
+
+        section{
+            width:80%;
+            margin:30px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+        }
+
+        /* About */
+
+        .about{
+            text-align:center;
+        }
+
+        .about img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            margin-bottom:20px;
+        }
+
+        .about p{
+            margin-top:15px;
+            line-height:1.6;
+        }
+
+        /* Skills */
+
+        .skills ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top:20px;
+            flex-wrap:wrap;
+        }
+
+        .skills li{
+            background:#3498db;
+            color:white;
+            padding:10px 20px;
+            border-radius:5px;
+        }
+
+        /* Projects */
+
+        .project-card{
+            background:#ecf0f1;
+            padding:20px;
+            margin-top:20px;
+            border-left:5px solid #3498db;
+            transition:.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+            cursor:pointer;
+        }
+
+        /* Contact */
+
+        .contact p{
+            margin-top:10px;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+        section{
+            width:95%;
+        }
+
+        .skills ul{
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .about img{
+            width:150px;
+            height:150px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Saravana Kumar</h1>
+
+        <p>Python Full Stack Developer</p>
+
+    </header>
+
+    
+
+    <section class="about">
+
+        <img src="profile.jpeg" alt="Profile">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a passionate Python Full Stack Developer with knowledge of HTML,
+            CSS, JavaScript and Python. I enjoy building responsive websites and
+            learning new technologies.
+        </p>
+
+    </section>
+
+    
+
+    <section class="skills">
+
+        <h2>Skills</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+
+    </section>
+
+   
+
+    <section class="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Responsive Pricing Cards</h3>
+
+            <p>Responsive pricing page using HTML and CSS.</p>
+
+        </div>
+
+        <div class="project-card">
+
+            <h3>Image Gallery</h3>
+
+            <p>Responsive image gallery with hover effects.</p>
+
+        </div>
+
+    </section>
+
+    
+
+    <section class="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email : saravana@example.com</p>
+
+        <p>Phone : +91 9876543210</p>
+
+    </section>
+
+   
+
+    <footer>
+
+        <p>© 2026 Saravana Kumar | All Rights Reserved</p>
+
+    </footer>
+</body>
+</html>

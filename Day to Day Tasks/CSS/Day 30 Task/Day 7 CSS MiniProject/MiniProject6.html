@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+
+       
+
+        .navbar {
+
+            /* Arrange logo and links horizontally */
+            display: flex;
+
+            /* Logo left, links right */
+            justify-content: space-between;
+
+            /* Center items vertically */
+            align-items: center;
+
+            /* Light gradient background */
+            background: linear-gradient(
+                90deg,
+                #1e3a8a,
+                #2563eb
+            );
+
+            padding: 18px 50px;
+        }
+
+
+      
+
+        .logo {
+
+            color: white;
+
+            font-size: 26px;
+
+            font-weight: bold;
+        }
+
+
+      
+
+        .nav-links {
+
+            /* Arrange links horizontally */
+            display: flex;
+
+            /* Space between links */
+            gap: 30px;
+
+            list-style: none;
+        }
+
+
+        .nav-links a {
+
+            /* Remove underline */
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 17px;
+
+            transition: 0.3s;
+        }
+
+
+        
+
+        .nav-links a:hover {
+
+            /* Change link color when mouse
+               moves over the link */
+            color: #facc15;
+        }
+
+
+       
+
+        .content {
+
+            text-align: center;
+
+            padding: 80px 20px;
+        }
+
+
+        .content h1 {
+
+            font-size: 40px;
+
+            color: #222;
+
+            margin-bottom: 15px;
+        }
+
+
+        .content p {
+
+            color: #666;
+
+            font-size: 18px;
+        }
+
+
+       
+
+        @media (max-width: 768px) {
+
+            .navbar {
+
+                padding: 15px 20px;
+
+                /* Stack logo and links
+                   vertically on small screens */
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            .nav-links {
+
+                gap: 15px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+
+    
+
+        <div class="logo">
+            MyWebsite
+        </div>
+
+
+       
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Services</a>
+            </li>
+
+            <li>
+                <a href="#">Projects</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+
+    
+
+    <main class="content">
+
+        <h1>
+            Welcome to My Website
+        </h1>
+
+        <p>
+            This navigation bar is created using CSS Flexbox.
+        </p>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Hover Effects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: rgba(44, 41, 45, 0.8);
+            padding: 15px;
+            text-align: center;
+            
+        }
+
+        a[href] {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+            padding: 10px 20px;
+            transition: 0.3s ;
+            font-size: 18px;
+            
+            
+                    }
+
+        a[href]:hover {
+            background-color: #3c5160;
+            color: yellow;
+            box-shadow: 0 0 10px gold;
+            border-radius: 5px;
+            transform:scale(0.9); 
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 2 - Geolocation Weather App</h1>
+
+    <button onclick="getLocation()">Get Weather</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(showWeather);
+
+            } else {
+
+                document.getElementById("result").innerHTML =
+                "Geolocation is not supported by this browser.";
+
+            }
+
+        }
+
+        function showWeather(position) {
+
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+
+            document.getElementById("result").innerHTML =
+            "Your Location: [" + latitude + ", " + longitude + "]<br>" +
+            "Weather: Sunny";
+
+        }
+
+    </script>
+
+     <header>
+
+        <h1>Task - Homepage</h1>
+
+    </header>
+
+    <nav>
+
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Services</a> |
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <h2>Featured Section</h2>
+
+        <p>
+            Welcome to our website. Explore our latest articles, services,
+            and featured content.
+        </p>
+
+    </main>
+
+    <hr>
+
+    <aside>
+
+        <h2>Newsletter</h2>
+
+        <p>
+            Subscribe to our newsletter for the latest updates.
+        </p>
+
+        <a href="#">Subscribe Now</a>
+
+    </aside>
+</body>
+</html>

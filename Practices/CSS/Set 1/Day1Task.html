@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            font-size: 24px;
+            color: blue;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #cta {
+            background-color: green;
+            color: white;
+        }
+
+        a[target="_blank"] {
+            color: purple;
+            font-weight: bold;
+        }
+
+        h1,h2,h3 {
+            font: bold;
+            color: green;
+        }
+
+        div p {
+            color: gold;
+            font-size: 12px;
+            background-color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul>li {
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            color: crimson;
+        }
+
+        h1 + p {
+            color: red;
+            font-size: 14px;
+        }
+
+        #cta:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: green;
+        }
+
+        h1::before {
+            content:"★ ";
+        }
+
+        li::after {
+            content:" ★";
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightgrey;
+        }
+
+        #main-title {
+            text-align: center;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .bordered {
+            border: 2px solid black;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        footer span {
+            font-size: 14px;
+            color: gray;
+        }
+
+        section>p {
+            color: blue;
+        }
+
+        h2+p {
+            color:green;
+            font-style: oblique;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        p::first-letter {
+            text-transform: uppercase;
+            font-size: 300%;
+        }
+
+        h1::selection {
+            background-color: orange;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <header id="main-title">
+        <h1>Food Restaurant</h1>
+        <p>Your favorite place for delicious food!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="bordered">
+            <p class="highlight">Welcome to our food restaurant</p>
+            <p class="highlight">We offer a variety of delicious dishes made with fresh ingredients.</p>
+        </section>
+
+        <section>
+            <h2>Our Menu</h2>
+            <p>Our menu features a wide range of options to suit every taste.</p>
+            <ul>
+                <li>Appetizers</li>
+                <li>Main Courses</li>
+                <li>Desserts</li>
+            </ul>
+        </section>
+
+        <section>
+            <table border="1">
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken</td>
+                    <td>Juicy grilled chicken served with vegetables.</td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <td>Pasta Primavera</td>
+                    <td>Fresh pasta with seasonal vegetables and a light sauce.</td>
+                    <td>$10.99</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Cake</td>
+                    <td>Rich and moist chocolate cake topped with ganache.</td>
+                    <td>$6.99</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>About Us</h2>
+            <p>We are a family-owned restaurant with a passion for great food and excellent service.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to make a reservation, please contact us.</p>
+            <address>
+                123 Food Street<br>
+                Culinary City, FL 12345<br>
+                Phone: (123) 456-7890<br>
+                Email: <a href="mailto:example@gmail.com">Example@gmail.com</a>
+            </address>
+        </section>
+
+        <section class="box">
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media:</p>
+            <ul>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Register</h2>
+            <p>Create an account to save your favorite dishes and receive exclusive offers.</p> 
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button id="cta">
+                    Register
+                </button>
+            </form>
+        </section>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Delicious Dish">
+            <h2>Delicious Dish</h2>
+            <p>Try our signature dish made with the freshest ingredients.</p>
+            <p>Watch our video to see how it's made!</p>
+        </div>
+    </main>
+
+    <footer>
+        <span>&copy; 2024 Food Restaurant. All rights reserved.</span>
+    </footer>
+</body>
+</html>

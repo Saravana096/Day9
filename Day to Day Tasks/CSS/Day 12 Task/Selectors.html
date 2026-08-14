@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* This is Universal Selector */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* This is Element Selector */
+        body{
+            background-color: sandybrown;
+            text-align: center;
+        }
+
+        /* This is Element Selector */
+        header{
+            background-color: darkslategray;
+            color: white;
+        }
+
+        /* This is Child Selector */
+        header > h1{
+            background-color: darkslategray;
+            color: #FFD700;
+            font-size: 40px;
+        }
+
+        /* This is Descendant Selector */
+        header p{
+            background-color: darkslategray;
+            color: white;
+        }
+
+        /* This is Element Selector */
+        nav{
+            background-color: #D6EAF8;
+        }
+
+        /* This is Descendant Selector */
+        nav a{
+            background-color: #D6EAF8;
+            color: darkblue;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* This is Pseudo-class Selector */
+        nav a:hover{
+            color: red;
+        }
+
+        /* This is Class Selector */
+        .company{
+            background-color: white;
+        }
+
+        /* This is Adjacent Sibling Selector */
+        h2 + p{
+            color: seagreen;
+            font-size: 18px;
+        }
+
+        /* This is Class Selector */
+        .services{
+            background-color: ghostwhite;
+        }
+
+        /* This is Descendant Selector */
+        .services li{
+            color: saddlebrown;
+        }
+
+        /* This is Class Selector */
+        .login-container{
+            background-color: cornsilk;
+        }
+
+        /* This is Descendant Selector */
+        .login-container input{
+            color: black;
+        }
+
+        /* This is Pseudo-class Selector */
+        input:focus{
+            background-color: lemonchiffon;
+        }
+
+        /* This is ID Selector */
+        #loginBtn{
+            background-color: darkblue;
+            color: white;
+        }
+
+        /* This is Pseudo-class Selector */
+        #loginBtn:hover{
+            background-color: darkgoldenrod;
+        }
+
+        /* This is Element Selector */
+        footer{
+            background-color: darkslategrey;
+            color: white;
+        }
+
+        /* This is Descendant Selector */
+        footer small{
+            background-color: rgb(4, 37, 37);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SK Solutions</h1>
+        <p>SK Technology for a Better Tomorrow</p>
+    </header>
+
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    
+    <main>
+
+       
+        <section class="company">
+
+            <h2>Welcome to SK Solutions</h2>
+
+            <p>
+                We provide professional web development, UI/UX design,
+                cloud computing, and software solutions for businesses.
+            </p>
+
+            <div class="services">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI / UX Design</li>
+                    <li>Cloud Computing</li>
+                    <li>Digital Marketing</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="login-container">
+
+            <h2>Employee Login</h2>
+
+            <form>
+
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+
+                <br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="Enter your Password" required>
+
+                <br><br>
+
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+
+                <br><br>
+
+                <button id="loginBtn" type="submit">Login</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <small>&copy; 2026 SK Solutions. All Rights Reserved.</small>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .testimonial{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .testimonial h1{
+            font-size:40px;
+            color:#0d6efd;
+            margin-bottom:40px;
+        }
+
+        .testimonial-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:320px;
+            background:white;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .quote{
+            font-family:'Poppins',sans-serif;
+            font-style:italic;
+            color:#555;
+            line-height:1.6;
+            margin-bottom:20px;
+        }
+
+        .card h3{
+            font-family:'Poppins',sans-serif;
+            color:#0d6efd;
+            margin-bottom:8px;
+        }
+
+        .card span{
+            color:#777;
+        }
+
+        @media(max-width:768px){
+
+            .testimonial h1{
+                font-size:30px;
+            }
+
+            .card{
+                width:90%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonial">
+
+        <h1>What Our Customers Say</h1>
+
+        <div class="testimonial-container">
+
+            <article class="card">
+
+                <p class="quote">
+                    "Excellent service! The team delivered my project on
+                    time with great quality."
+                </p>
+
+                <h3>John Doe</h3>
+
+                <span>Web Developer</span>
+
+            </article>
+
+            <article class="card">
+
+                <p class="quote">
+                    "Professional, responsive, and highly recommended.
+                    Amazing experience working together."
+                </p>
+
+                <h3>Sarah Smith</h3>
+
+                <span>UI/UX Designer</span>
+
+            </article>
+
+            <article class="card">
+
+                <p class="quote">
+                    "The website looks modern and works perfectly on all
+                    devices. Great job!"
+                </p>
+
+                <h3>David Wilson</h3>
+
+                <span>Business Owner</span>
+
+            </article>
+
+        </div>
+
+    </section>
+</body>
+</html>

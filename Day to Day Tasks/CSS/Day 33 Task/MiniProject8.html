@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f1f5f9;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 30px;
+        }
+
+
+        .newsletter-section {
+
+            width: 100%;
+
+            max-width: 1000px;
+
+            margin: auto;
+        }
+
+
+        .newsletter-banner {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 30px;
+
+            padding: 35px 40px;
+
+            background: linear-gradient(
+                135deg,
+                #2563eb,
+                #7c3aed
+            );
+
+            border-radius: 12px;
+
+            color: white;
+        }
+
+        .newsletter-text {
+
+            flex: 1;
+        }
+
+
+        .newsletter-text h1 {
+
+            font-size: 28px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .newsletter-text p {
+
+            color: #e0e7ff;
+
+            line-height: 1.5;
+        }
+
+        .newsletter-form {
+
+            display: flex;
+
+            gap: 10px;
+
+            flex: 1;
+        }
+
+        .newsletter-form input {
+
+            flex: 1;
+
+            padding: 13px 15px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+        .newsletter-form button {
+
+            padding: 13px 22px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background-color: white;
+
+            color: #2563eb;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .newsletter-form button:hover {
+
+            background-color: #facc15;
+
+            color: #222;
+        }
+
+        @media (max-width: 768px) {
+
+            .newsletter-banner {
+
+                flex-direction: column;
+
+                text-align: center;
+
+                padding: 30px 20px;
+            }
+
+
+            .newsletter-form {
+
+                width: 100%;
+
+                flex-direction: column;
+            }
+
+
+            .newsletter-form input,
+            .newsletter-form button {
+
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="newsletter-section">
+
+
+        <div class="newsletter-banner">
+
+
+            <div class="newsletter-text">
+
+                <h1>
+                    Subscribe to Our Newsletter
+                </h1>
+
+                <p>
+                    Get the latest updates, news and
+                    exclusive content directly in your inbox.
+                </p>
+
+            </div>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+
+        </div>
+
+
+    </section>
+
+</body>
+</html>

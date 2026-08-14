@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box{
+            width:300px;
+            margin:50px auto;
+            padding:20px;
+            border:1px solid black;
+        }
+
+        input{
+            width:100%;
+            padding:8px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+        }
+
+        #error{
+            color:red;
+            font-size:14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+    <h2>Login</h2>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter Email">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter Password">
+
+    <p id="error"></p>
+
+    <button onclick="validateLogin()">
+        Login
+    </button>
+
+</div>
+
+<script>
+
+function validateLogin(){
+
+    let password =
+    document.getElementById("password").value;
+
+    let error =
+    document.getElementById("error");
+
+    if(password.length < 6){
+
+        error.innerHTML =
+        "Password must be at least 6 characters.";
+
+    }
+
+    else{
+
+        error.innerHTML = "";
+
+        alert("Login Successful");
+
+    }
+
+}
+
+</script>
+    
+</body>
+</html>

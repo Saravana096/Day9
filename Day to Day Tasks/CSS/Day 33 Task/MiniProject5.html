@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f4f6f8;
+
+            padding: 50px 20px;
+        }
+
+        .pricing-section {
+
+            max-width: 1000px;
+
+            margin: auto;
+        }
+
+        .pricing-section h1 {
+
+            text-align: center;
+
+            color: #222;
+
+            margin-bottom: 10px;
+        }
+
+
+        .pricing-section > p {
+
+            text-align: center;
+
+            color: #666;
+
+            margin-bottom: 35px;
+        }
+
+
+        .pricing-container {
+
+            display: flex;
+            flex-direction: row;
+
+            gap: 25px;
+
+            align-items: stretch;
+        }
+
+        .plan {
+
+            flex-grow: 1;
+
+            flex-basis: 0;
+
+            background-color: white;
+
+            padding: 30px 25px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            border: 1px solid #ddd;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .pro-plan {
+            flex-grow: 1.3;
+
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2
+            );
+
+            color: white;
+
+            box-shadow: 0 10px 30px rgba(
+                102,
+                126,
+                234,
+                0.4
+            );
+
+            transform: scale(1.04);
+        }
+
+        .plan h2 {
+
+            margin-bottom: 15px;
+
+            color: #222;
+        }
+
+
+        .pro-plan h2 {
+
+            color: white;
+        }
+
+        .price {
+
+            font-size: 38px;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
+
+            color: #2563eb;
+        }
+
+
+        .pro-plan .price {
+
+            color: white;
+        }
+
+        .plan ul {
+
+            list-style: none;
+
+            margin-bottom: 25px;
+        }
+
+
+        .plan li {
+
+            padding: 8px 0;
+
+            color: #555;
+        }
+
+
+        .pro-plan li {
+
+            color: white;
+        }
+
+        .plan button {
+
+            padding: 12px 25px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background-color: #2563eb;
+
+            color: white;
+
+            font-size: 15px;
+
+            cursor: pointer;
+        }
+
+
+        .pro-plan button {
+
+            background-color: white;
+
+            color: #764ba2;
+        }
+
+        .plan:hover {
+
+            /* Plan grows slightly on hover */
+            transform: scale(1.06);
+
+            box-shadow: 0 12px 25px rgba(
+                0,
+                0,
+                0,
+                0.18
+            );
+        }
+
+        .pro-plan:hover {
+
+            transform: scale(1.08);
+        }
+
+        @media (max-width: 768px) {
+
+            .pricing-container {
+
+                flex-direction: column;
+            }
+
+
+            .pro-plan {
+
+                transform: scale(1);
+            }
+
+
+            .pro-plan:hover {
+
+                transform: scale(1.03);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="pricing-section">
+
+
+        <!-- Heading -->
+
+        <h1>
+            Choose Your Plan
+        </h1>
+
+
+        <p>
+            Select the plan that works best for you.
+        </p>
+
+
+        <div class="pricing-container">
+
+            <div class="plan">
+
+                <h2>
+                    Basic
+                </h2>
+
+
+                <div class="price">
+                    $9
+                    <small>/month</small>
+                </div>
+
+
+                <ul>
+
+                    <li>✔ 5 Projects</li>
+
+                    <li>✔ 10 GB Storage</li>
+
+                    <li>✔ Email Support</li>
+
+                    <li>✖ Advanced Features</li>
+
+                </ul>
+
+
+                <button>
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <div class="plan pro-plan">
+
+                <h2>
+                    Pro
+                </h2>
+
+
+                <div class="price">
+                    $19
+                    <small>/month</small>
+                </div>
+
+
+                <ul>
+
+                    <li>✔ 20 Projects</li>
+
+                    <li>✔ 50 GB Storage</li>
+
+                    <li>✔ Priority Support</li>
+
+                    <li>✔ Advanced Features</li>
+
+                </ul>
+
+
+                <button>
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <div class="plan">
+
+                <h2>
+                    Premium
+                </h2>
+
+
+                <div class="price">
+                    $39
+                    <small>/month</small>
+                </div>
+
+
+                <ul>
+
+                    <li>✔ Unlimited Projects</li>
+
+                    <li>✔ 100 GB Storage</li>
+
+                    <li>✔ 100 GB Storage</li>
+
+                    <li>✔ 24/7 Support</li>
+
+                </ul>
+
+
+                <button>
+                    Choose Plan
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

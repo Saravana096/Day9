@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 11 - Geolocation API</h1>
+
+    <button onclick="getLocation()">Get Current Location</button>
+
+    <p id="location"></p>
+
+    <script>
+
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+
+            } else {
+
+                document.getElementById("location").innerHTML =
+                "Geolocation is not supported by this browser.";
+
+            }
+
+        }
+
+        function showPosition(position) {
+
+            document.getElementById("location").innerHTML =
+            "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+
+        }
+
+        function showError() {
+
+            document.getElementById("location").innerHTML =
+            "Unable to retrieve your location.";
+
+        }
+
+    </script>
+</body>
+</html>

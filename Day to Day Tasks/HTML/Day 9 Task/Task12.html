@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 12 - Location-Aware Weather Widget</h1>
+
+    <button onclick="getWeather()">Get Weather</button>
+
+    <p id="weather"></p>
+
+    <script>
+
+        function getWeather() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(showWeather, showError);
+
+            } else {
+
+                document.getElementById("weather").innerHTML =
+                "Geolocation is not supported by this browser.";
+
+            }
+
+        }
+
+        function showWeather(position) {
+
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+
+            document.getElementById("weather").innerHTML =
+            "Your Location: [" + latitude + ", " + longitude + "]<br><br>" +
+            "City: Chennai<br>" +
+            "Temperature: 32°C";
+
+        }
+
+        function showError() {
+
+            document.getElementById("weather").innerHTML =
+            "Unable to retrieve your location.";
+
+        }
+
+    </script>
+</body>
+</html>

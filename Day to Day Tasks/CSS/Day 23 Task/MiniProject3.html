@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .card{
+            width:30%;                  /* % */
+            min-width:280px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            overflow:hidden;
+            text-align:center;
+        }
+
+        .card img{
+            width:100%;
+            display:block;
+        }
+
+        .card-content{
+            padding:20px;               /* px */
+        }
+
+        .card h2{
+            font-size:3vmin;            /* vmin */
+            margin-bottom:15px;         /* px */
+        }
+
+        .price{
+            font-size:2.5vmax;          /* vmax */
+            color:green;
+            font-weight:bold;
+            margin-bottom:20px;         /* px */
+        }
+
+        button{
+            padding:12px 25px;          /* px */
+            border:none;
+            background:#007bff;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <img src="https://picsum.photos/400/250" alt="Product Image">
+
+        <div class="card-content">
+
+            <h2>Wireless Headphones</h2>
+
+            <p class="price">$99.99</p>
+
+            <button>Buy Now</button>
+
+        </div>
+
+    </div>
+</body>
+</html>

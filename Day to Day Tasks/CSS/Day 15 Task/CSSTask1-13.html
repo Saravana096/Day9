@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spin Hotel</title>
+
+    <style>
+        /*Task 1*/
+        section {
+            background-color: lightblue;
+        }
+
+        /*Task 2*/
+        header {
+            color: #C9CAAC;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /*Task 3*/
+        nav {
+            background-color: rgba(18, 182, 232, 0.847);
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+        /*Task 4*/
+        #about-hotel {
+            background-color: rgb(255,165,0,0.5);
+            
+        }
+        #about-hotel h2 {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #about-hotel p {
+            line-height: 1.6;
+            font-size: 12px;
+            margin: 10px auto;
+            width: 400px;
+            padding: 5px;
+            font-family: monospace;
+        }
+
+        /*Task 5 */
+        button {
+            background-color: hsl(36, 99%, 51%);
+            color: white;
+            font-size: 30px;
+        }
+
+        /*Task 6*/
+        header {
+            background: linear-gradient(to right, #8B5CF6, #4C1D95);
+        }
+
+        /*Task 7*/
+        footer {
+            background: radial-gradient(skyblue, gray);
+            text-align: center;
+            font-family: monospace;
+        }
+
+        /*Task 8*/
+        #review {
+            background: conic-gradient(skyblue, lightgreen, gold);
+            overflow: hidden;
+        }
+
+        aside {
+            background: conic-gradient(skyblue, lightgreen, gold);
+            width: 280px;
+            float: right;
+            border: 5px solid black;
+            padding: 15px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        aside > p{
+            font-family: monospace;
+        }
+
+        /*Task 9*/
+        body {
+            background: linear-gradient(rgba(192, 220, 9, 0.5),rgba(12, 97, 234, 0.9));
+            
+        }
+
+        /*Task 10*/
+        .hotel-features ul {
+            background-color: hsl(40, 100%, 90%);
+            font-size: 20px;
+            list-style: none;
+           
+        }
+        .hotel-features li {
+            color: hsl(25, 90%, 35%);
+            font-family: monospace;
+        }
+
+        .hotel-features {
+            text-transform: uppercase;
+            margin: 18px;
+            padding: 15px;
+            border: 5px solid black;
+            float: left;
+            text-align: left;
+        }
+
+        /*Task 11*/
+        .about {
+            color: #2563EB;
+        }
+
+        .amenities {
+            color: #16A34A;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        /*Task 12*/
+        #offer{
+            background: radial-gradient(rgb(246, 59, 103), rgb(129, 30, 175));
+            font-size: 18px;
+            color: hsl(59, 99%, 51%);
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            
+        }
+
+        /*Task 13*/
+        button:hover {
+            background: conic-gradient(#60A5FA,#062059,#062059);
+            cursor: pointer;
+            color: lightseagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>The Spin Hotel</h1>
+
+        <nav>
+            <a href="#">Overview</a>
+            <a href="#">Prices</a>
+            <a href="#">Review</a>
+            <a href="#">Photo</a>
+            <a href="#">About</a>
+            <button type="submit">Book Now</button>
+        </nav>
+
+        
+    </header>
+
+    <main>
+
+        <section>
+
+            <div id="about-hotel">
+
+            <h2 class="about">About This Hotel</h2>
+
+            <p>
+                Set in a modern building with a glass facade, this warm hotel on a main road is a 13-minute walk 
+                from Chepauk train station and 19 minutes' walk from Marina Beach.
+            </p>
+
+            <p>
+                The unassuming rooms have free Wi-Fi and flat-screen TVs, plus safes, and tea and coffeemaking facilities. 
+                Upgraded rooms add sofas and minifridges. Room service is available.
+            </p>
+
+            <p>
+                There's a low-key restaurant. Parking is offered.
+            </p>
+
+            <p><Strong>Check-in time: </Strong>12:00 pm</p>
+
+            <p><Strong>Check-out time:  </Strong>11:00 am</p>
+
+            </div>
+
+        </section>
+
+        <section class="hotel-features">
+
+            <h2 class="amenities">Popular Amenities</h2>
+
+            <ul>
+                <li>BreakFast Free</li>
+                <li>Wifi Free</li>
+                <li>Air Conditioning</li>
+                <li>Parking</li>
+            </ul>
+        </section>
+
+        <section>
+
+            <div id="review">
+
+                <aside>
+
+                    <h2>Customer Review</h2>
+
+                    <p>"Excellent service and comfortable rooms. The staff was very helpful and the amenities were top-notch."</p>
+
+                    <p>"Beautiful property with great dining options. Perfect for business travelers."</p>
+                </aside>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div id="offer">
+                <h2>Special Offer</h2>
+                <p>25% Discount for 4 Member Rooms Booking</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <small>© 2026 The Spin Hotel. All rights reserved.</small>
+        <p>Developed by Saravanakumar</p>
+    </footer>
+</body>
+</html>

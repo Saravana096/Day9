@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+</head>
+<body>
+    <h2>Task - 27 Soundboard</h2>
+
+    <!-- Audio Files -->
+    <audio id="sound1">
+        <source src="audio1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="sound2">
+        <source src="audio2.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="sound3">
+        <source src="audio3.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Buttons -->
+    <button onclick="playSound('sound1')">Sound 1</button>
+
+    <button onclick="playSound('sound2')">Sound 2</button>
+
+    <button onclick="playSound('sound3')">Sound 3</button>
+
+    <script>
+
+        function playSound(audioId)
+        {
+            // Get Audio Element
+            let audio = document.getElementById(audioId);
+
+            // Restart audio if already playing
+            audio.currentTime = 0;
+
+            // Play Audio
+            audio.play();
+        }
+
+    </script>
+</body>
+</html>

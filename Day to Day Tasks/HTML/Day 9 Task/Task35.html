@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Preview</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        #preview{
+            width:200px;
+            height:100px;
+            border:2px solid black;
+            margin-top:20px;
+            background-color:#000000;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Choose Your Favorite Color</h2>
+
+    <form>
+
+        <label>Select Color:</label>
+
+        <input
+            type="color"
+            id="colorPicker"
+            value="#000000"
+            oninput="changeColor()">
+
+    </form>
+
+    <div id="preview"></div>
+
+    <script>
+
+        function changeColor(){
+
+            let color =
+            document.getElementById("colorPicker").value;
+
+            document.getElementById("preview").style.backgroundColor = color;
+
+        }
+
+    </script>
+
+</body>
+</html>

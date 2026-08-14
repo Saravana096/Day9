@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Validation</title>
+</head>
+<body>
+    <!--Build a form with a pattern to validate usernames (e.g., only letters, min 3 
+    characters). Explain how the pattern attribute works.-->
+
+    <h1>Username Validation</h1>
+
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" pattern="[A-Za-z]{3}" title="Enter at least 3 letters only" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p><strong>Pattern Attribute:</strong> The pattern attribute is used to validate user input using a regular
+     expression. In this example,<strong> [A-Za-z]{3} </strong>allows only letters and requires a minimum of 3 characters.</p>
+
+
+     <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" pattern="[A-Za-z]{8}[!@#$%&?]{2}" title="Enter at least 8 letter and two special symbols"><br><br>
+
+        <button type="submit">Submit</button>
+
+        <p><strong>Pattern Attribute:</strong> The pattern attribute is used to validate user input using a regular 
+        expression. In this example,<strong> [A-Za-z]{8}[!@#$%&?]{2} </strong>allows only letters and Symbols requires
+        a minimum of 8 characters and two special symbols.</p>
+     </form>
+</body>
+</html>

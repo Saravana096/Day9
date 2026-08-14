@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 CSS Task 1 to 13</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            margin:20px;
+        }
+
+        section{
+            margin-bottom:50px;
+            padding:20px;
+            border:2px solid #333;
+        }
+
+        h2{
+            margin-bottom:20px;
+        }
+
+        .box{
+            width:70px;
+            height:70px;
+            background:steelblue;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        /* Task 1 */
+
+        .task1{
+            display:flex;
+            gap:10px;
+        }
+
+        /* Task 2 */
+
+        .task2{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+
+        /* Task 3 */
+
+        .task3{
+            display:flex;
+            justify-content:center;
+            gap:10px;
+            border:1px solid black;
+            height:100px;
+        }
+
+        /* Task 4 */
+
+        .task4{
+            display:flex;
+            justify-content:flex-end;
+            gap:10px;
+            border:1px solid black;
+            height:100px;
+        }
+
+        /* Task 5 */
+
+        .task5{
+            display:flex;
+            justify-content:space-between;
+            border:1px solid black;
+        }
+
+        /* Task 6 */
+
+        .sidebar{
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            background:#eee;
+            width:150px;
+            padding:10px;
+            gap:10px;
+        }
+
+        .sidebar a{
+            text-decoration:none;
+        }
+
+        /* Task 7 */
+
+        .navbar{
+            display:flex;
+            justify-content:space-around;
+            background:#333;
+            padding:15px;
+        }
+
+        .navbar a{
+            color:white;
+            text-decoration:none;
+        }
+
+        /* Task 8 */
+
+        .task8{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            gap:10px;
+            border:1px solid black;
+            height:150px;
+        }
+
+        /* Task 9 */
+
+        .task9{
+            display:flex;
+            flex-wrap:wrap;
+            align-content:space-around;
+            gap:10px;
+            height:250px;
+            border:1px solid black;
+        }
+
+        .task9 .box{
+            width:90px;
+        }
+
+        /* Task 10 */
+
+        .center-card{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:250px;
+            border:2px dashed black;
+        }
+
+        .card{
+            background:tomato;
+            color:white;
+            padding:40px;
+        }
+
+        /* Task 11 */
+
+        .task11{
+            display:flex;
+            gap:25px;
+        }
+
+        /* Task 12 */
+
+        .task12{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+        }
+
+        .task12 .box{
+            width:150px;
+        }
+
+        /* Task 13 */
+
+        .footer{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            background:#222;
+            padding:20px;
+        }
+
+        .footer a{
+            color:white;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Task 1 - display:flex</h2>
+
+        <div class="task1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 2 - flex-direction:column</h2>
+
+        <div class="task2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 3 - justify-content:center</h2>
+
+        <div class="task3">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 4 - justify-content:flex-end</h2>
+
+        <div class="task4">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 5 - space-between</h2>
+
+        <div class="task5">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 6 - Vertical Sidebar</h2>
+
+        <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 7 - Navigation Bar</h2>
+
+        <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 8 - align-items:center</h2>
+
+        <div class="task8">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 9 - align-content</h2>
+
+        <div class="task9">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 10 - Center Card</h2>
+
+        <div class="center-card">
+
+        <div class="card">
+        Card
+        </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 11 - gap</h2>
+
+        <div class="task11">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 12 - flex-wrap</h2>
+
+        <div class="task12">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Task 13 - Responsive Footer</h2>
+
+        <div class="footer">
+
+        <a href="#">Home</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+
+        </div>
+
+    </section>
+</body>
+</html>

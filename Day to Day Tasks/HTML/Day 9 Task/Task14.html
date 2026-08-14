@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+     <h1>Task 14 - Color Preference Selector</h1>
+
+    <label for="color">Choose a Color:</label>
+
+    <input type="color" id="color">
+
+    <button type="button" onclick="saveColor()">
+        Save Color
+    </button>
+
+    <script>
+
+        window.onload = function () {
+
+            var savedColor = localStorage.getItem("backgroundColor");
+
+            if (savedColor) {
+
+                document.body.style.backgroundColor = savedColor;
+
+                document.getElementById("color").value = savedColor;
+
+            }
+
+        };
+
+        function saveColor() {
+
+            var selectedColor = document.getElementById("color").value;
+
+            localStorage.setItem("backgroundColor", selectedColor);
+
+            document.body.style.backgroundColor = selectedColor;
+
+        }
+
+    </script>
+
+</body>
+</html>

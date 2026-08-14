@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 26</title>
+</head>
+<body>
+    <!--Build a simple form that takes user input for Name, Email, and Password. 
+    Use required attribute for validation.-->
+
+    <h1>Registration Form</h1>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="pwd" required 
+        pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%&*?!]).{8,}"
+        title="Password must contain at least 8 characters, one uppercase letter, one lowercase letter, 
+        one special character[@#$%&*?!] and one number."><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>In Form <strong>Password </strong>input should allowed at least <strong><mark>8 characters, one uppercase letter, one lowercase letter,
+    one special character[@#$%&*?!] and one number </mark></strong>using <strong>pattern attributes.</strong></p>
+
+    <hr>
+
+    <h1>Event Form</h1>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone no:</label><br>
+        <input type="number" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Select option below:</label><br><br>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">Old Member</label><br>
+
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">New Member</label><br><br>
+
+        <input type="checkbox" id="agree" name="checkbox" required>
+        <label for="agree">I Agree</label><br><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

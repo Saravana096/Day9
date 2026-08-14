@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+        }
+
+        h1{
+            text-align:center;
+            margin:40px 0;
+        }
+
+        .pricing-container{
+
+            display:flex;
+
+            justify-content:center;
+
+            gap:30px;
+
+            flex-wrap:wrap;
+
+            margin-bottom:40px;
+
+        }
+
+        .plan{
+
+            width:280px;
+
+            background:white;
+
+            border-radius:12px;
+
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+
+            text-align:center;
+
+            padding:30px;
+
+            transition:0.3s;
+
+        }
+
+        .plan:hover{
+
+            box-shadow:0 0 20px #4facfe;
+
+        }
+
+        .plan h2{
+
+            margin-bottom:20px;
+
+            color:#0d6efd;
+
+        }
+
+        .price{
+
+            font-size:30px;
+
+            color:#ff5722;
+
+            text-shadow:2px 2px 4px gray;
+
+            margin-bottom:20px;
+
+        }
+
+        .plan p{
+
+            margin:10px 0;
+
+        }
+
+        .plan button{
+
+            margin-top:20px;
+
+            padding:12px 25px;
+
+            background:#0d6efd;
+
+            color:white;
+
+            border:none;
+
+            border-radius:6px;
+
+            cursor:pointer;
+
+            transition:0.3s;
+
+        }
+
+        .plan button:hover{
+
+            background:#084298;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricing Plans</h1>
+
+    <div class="pricing-container">
+
+        <div class="plan">
+
+            <h2>Basic</h2>
+
+            <div class="price">₹199 / Month</div>
+
+            <p>✔ 5 Projects</p>
+
+            <p>✔ Email Support</p>
+
+            <p>✔ 10 GB Storage</p>
+
+            <button>Choose Plan</button>
+
+        </div>
+
+        <div class="plan">
+
+            <h2>Pro</h2>
+
+            <div class="price">₹499 / Month</div>
+
+            <p>✔ 20 Projects</p>
+
+            <p>✔ Priority Support</p>
+
+            <p>✔ 100 GB Storage</p>
+
+            <button>Choose Plan</button>
+
+        </div>
+
+        <div class="plan">
+
+            <h2>Premium</h2>
+
+            <div class="price">₹999 / Month</div>
+
+            <p>✔ Unlimited Projects</p>
+
+            <p>✔ 24/7 Support</p>
+
+            <p>✔ Unlimited Storage</p>
+
+            <button>Choose Plan</button>
+
+        </div>
+
+    </div>
+</body>
+</html>

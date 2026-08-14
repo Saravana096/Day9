@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:40px;
+        }
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+            color:#2C3E50;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:#fff;
+        }
+
+        th,td{
+            border:1px solid #ddd;
+            padding:15px;
+            text-align:center;
+        }
+
+        th{
+            background:#2C3E50;
+            color:white;
+        }
+
+       
+        tr:nth-child(even){
+            background:#f2f2f2;
+        }
+
+       
+        .best-plan{
+            background:#FFF8DC;
+            border:3px solid #FFD700;
+            font-weight:bold;
+        }
+
+        
+        tr:hover{
+            background:#d6eaf8;
+        }
+
+      
+        @media(max-width:768px){
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr{
+            display:block;
+            width:100%;
+        }
+
+        tr{
+            margin-bottom:20px;
+            border:1px solid #ccc;
+        }
+
+        th{
+            display:none;
+        }
+
+        td{
+            text-align:right;
+            padding-left:50%;
+            position:relative;
+        }
+
+        td::before{
+            position:absolute;
+            left:10px;
+            font-weight:bold;
+        }
+
+        tr td:nth-child(1)::before{
+            content:"Feature";
+        }
+
+        tr td:nth-child(2)::before{
+            content:"Basic";
+        }
+
+        tr td:nth-child(3)::before{
+            content:"Premium";
+        }
+
+        tr td:nth-child(4)::before{
+            content:"Enterprise";
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <h1>Product Feature Comparison</h1>
+
+    <table>
+
+        <tr>
+            <th>Features</th>
+            <th>Basic</th>
+            <th class="best-plan">Premium ⭐</th>
+            <th>Enterprise</th>
+        </tr>
+
+        <tr>
+            <td>Price</td>
+            <td>$9/month</td>
+            <td class="best-plan">$19/month</td>
+            <td>$39/month</td>
+        </tr>
+
+        <tr>
+            <td>Storage</td>
+            <td>50 GB</td>
+            <td class="best-plan">200 GB</td>
+            <td>1 TB</td>
+        </tr>
+
+        <tr>
+            <td>24/7 Support</td>
+            <td>❌</td>
+            <td class="best-plan">✔️</td>
+            <td>✔️</td>
+        </tr>
+
+        <tr>
+            <td>Free Domain</td>
+            <td>❌</td>
+            <td class="best-plan">✔️</td>
+            <td>✔️</td>
+        </tr>
+
+        <tr>
+            <td>SSL Certificate</td>
+            <td>✔️</td>
+            <td class="best-plan">✔️</td>
+            <td>✔️</td>
+        </tr>
+
+        <tr>
+            <td>Unlimited Users</td>
+            <td>❌</td>
+            <td class="best-plan">✔️</td>
+            <td>✔️</td>
+        </tr>
+
+        <tr>
+            <td>Cloud Backup</td>
+            <td>❌</td>
+            <td class="best-plan">✔️</td>
+            <td>✔️</td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+</html>

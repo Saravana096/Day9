@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Progress</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+            color:#2c3e50;
+        }
+
+        section{
+            margin-bottom:25px;
+        }
+
+        h2{
+            margin-bottom:10px;
+        }
+
+        .progress{
+            width:100%;
+            height:30px;
+            background:#ddd;
+            border-radius:20px;
+            overflow:hidden;
+        }
+
+        .progress div{
+            height:100%;
+            color:white;
+            text-align:center;
+            line-height:30px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        /* Progress Width */
+
+        .html{
+            width:90%;
+            background:linear-gradient(to right,#00c6ff,#0072ff);
+        }
+
+        .css{
+            width:85%;
+            background:linear-gradient(to right,#36d1dc,#5b86e5);
+        }
+
+        .js{
+            width:70%;
+            background:linear-gradient(to right,#f7971e,#ffd200);
+        }
+
+        .python{
+            width:80%;
+            background:linear-gradient(to right,#56ab2f,#a8e063);
+        }
+
+        /* Hover */
+
+        .progress div:hover{
+
+            background:linear-gradient(to right,#ff512f,#dd2476);
+
+            color:yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>My Skills</h1>
+
+    <section>
+
+        <h2>HTML</h2>
+
+        <div class="progress">
+
+            <div class="html">90%</div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>CSS</h2>
+
+        <div class="progress">
+
+            <div class="css">85%</div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>JavaScript</h2>
+
+        <div class="progress">
+
+            <div class="js">70%</div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Python</h2>
+
+        <div class="progress">
+
+            <div class="python">80%</div>
+
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Album Preview</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .card{
+            width: 350px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        ol{
+            padding-left: 20px;
+        }
+
+        audio{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h2>🎵 My Music Album</h2>
+
+        <p><strong>Artist:</strong> Saravana Kumar</p>
+
+        <h3>Song List</h3>
+
+        <ol>
+
+            <li>
+                Dream Begins
+                <br><br>
+                <audio controls>
+                    <source src="song1.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+            <li>
+                Rise Again
+                <br><br>
+                <audio controls>
+                    <source src="song2.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+            <li>
+                Never Give Up
+                <br><br>
+                <audio controls>
+                    <source src="song3.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+
+        </ol>
+
+    </div>
+</body>
+</html>

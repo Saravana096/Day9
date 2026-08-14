@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 21 to 30</title>
+</head>
+<body>
+    <h2>Task 21 - YouTube Tutorial</h2>
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/Al0GDWn6qd8?si=uFKJexkvynYXV_-N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr>
+<article>
+
+        <h1>Task 22 - HTML Basics for Beginners</h1>
+
+        <p>
+            In this blog post, you will learn the basics of HTML.
+            Watch the tutorial video below to understand HTML structure,
+            headings, paragraphs, links, and images.
+        </p>
+
+        <figure>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw?si=Ecrym5PO2eEDBTh6" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+
+            <figcaption>
+                Figure 1: HTML Beginner Tutorial - Learn the basics of HTML.
+            </figcaption>
+
+        </figure>
+
+        <p>
+            After watching the video, practice creating simple web pages
+            using HTML tags such as headings, paragraphs, lists, links,
+            and images.
+        </p>
+
+    </article>
+
+    <hr>
+
+    <header>
+        <h1>Task 23 - My Landing Page</h1>
+    </header>
+
+    <main>
+
+        <h2>Welcome to My Website</h2>
+
+        <p>
+            Learn HTML, CSS, JavaScript and Python Full Stack Development.
+        </p>
+
+        <svg width="300" height="220">
+
+            <!-- Circle -->
+            <circle cx="150" cy="60" r="30" fill="skyblue">
+
+                <animate
+                    attributeName="r"
+                    values="30;40;30"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+
+            </circle>
+
+            <!-- Rectangle -->
+            <rect
+                x="120"
+                y="100"
+                width="60"
+                height="60"
+                fill="orange">
+
+                <animate
+                    attributeName="fill"
+                    values="orange;red;orange"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+
+            </rect>
+
+            <!-- Text -->
+            <text
+                x="90"
+                y="200"
+                font-size="24"
+                fill="black">
+
+                MY LOGO
+
+                <animate
+                    attributeName="fill"
+                    values="black;blue;black"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+
+            </text>
+
+        </svg>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Landing Page</p>
+    </footer>
+
+    <hr>
+
+    <h2>Task 24 - Weather Icon</h2>
+
+<svg width="300" height="220">
+
+    <!-- Sun -->
+    <circle
+        cx="70"
+        cy="60"
+        r="25"
+        fill="gold">
+    </circle>
+
+    <!-- Sun Rays -->
+    <line x1="70" y1="20" x2="70" y2="5" stroke="orange" stroke-width="3"/>
+    <line x1="70" y1="100" x2="70" y2="115" stroke="orange" stroke-width="3"/>
+    <line x1="30" y1="60" x2="15" y2="60" stroke="orange" stroke-width="3"/>
+    <line x1="110" y1="60" x2="125" y2="60" stroke="orange" stroke-width="3"/>
+
+    <line x1="45" y1="35" x2="30" y2="20" stroke="orange" stroke-width="3"/>
+    <line x1="95" y1="35" x2="110" y2="20" stroke="orange" stroke-width="3"/>
+    <line x1="45" y1="85" x2="30" y2="100" stroke="orange" stroke-width="3"/>
+    <line x1="95" y1="85" x2="110" y2="100" stroke="orange" stroke-width="3"/>
+
+    <!-- Cloud -->
+    <ellipse cx="180" cy="90" rx="35" ry="25" fill="lightgray"/>
+    <ellipse cx="210" cy="90" rx="35" ry="25" fill="lightgray"/>
+    <ellipse cx="195" cy="65" rx="30" ry="25" fill="lightgray"/>
+
+    <rect
+        x="145"
+        y="90"
+        width="100"
+        height="30"
+        fill="lightgray">
+    </rect>
+
+    <!-- Rain Drops -->
+    <path
+        d="M170 135 Q165 145 170 155 Q175 145 170 135"
+        fill="deepskyblue">
+    </path>
+
+    <path
+        d="M195 135 Q190 145 195 155 Q200 145 195 135"
+        fill="deepskyblue">
+    </path>
+
+    <path
+        d="M220 135 Q215 145 220 155 Q225 145 220 135"
+        fill="deepskyblue">
+    </path>
+
+</svg>
+
+<hr>
+
+<section>
+
+    <h2>Task 25 - Watch Demo</h2>
+
+    <iframe
+        src="https://player.vimeo.com/video/76979871"
+        width="640"
+        height="360"
+        title="Vimeo Demo Video"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<hr>
+
+<h2>Task 26 - Monthly Website Visitors</h2>
+
+    <canvas id="visitorChart" width="600" height="400" style="border:1px solid black;">
+        Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+
+        // Get Canvas
+        const canvas = document.getElementById("visitorChart");
+        const ctx = canvas.getContext("2d");
+
+        // Data
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+        const visitors = [120, 180, 250, 150, 300, 220];
+
+        // Starting position
+        let x = 60;
+
+        // Draw Bars
+        for(let i = 0; i < visitors.length; i++)
+        {
+            let barHeight = visitors[i];
+
+            // Draw Bar
+            ctx.fillStyle = "steelblue";
+            ctx.fillRect(x, 350 - barHeight, 50, barHeight);
+
+            // Month Label
+            ctx.fillStyle = "black";
+            ctx.font = "16px Arial";
+            ctx.fillText(months[i], x + 8, 370);
+
+            // Visitor Count
+            ctx.fillText(visitors[i], x + 3, 340 - barHeight);
+
+            x += 90;
+        }
+
+        // X-axis
+        ctx.beginPath();
+        ctx.moveTo(40, 350);
+        ctx.lineTo(650, 350);
+        ctx.stroke();
+
+        // Y-axis
+        ctx.beginPath();
+        ctx.moveTo(40, 20);
+        ctx.lineTo(40, 350);
+        ctx.stroke();
+
+    </script>
+
+    <hr>
+
+    
+</body>
+</html>

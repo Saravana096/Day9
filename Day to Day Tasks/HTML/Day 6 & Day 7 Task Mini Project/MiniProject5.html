@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Project 5 - Survey Form</h1>
+
+    <form action="/submit.html" method="get">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <p>How satisfied are you with our service?</p>
+
+        <input type="radio" id="excellent" name="rating" value="Excellent">
+        <label for="excellent">Excellent</label><br>
+
+        <input type="radio" id="good" name="rating" value="Good">
+        <label for="good">Good</label><br>
+
+        <input type="radio" id="average" name="rating" value="Average">
+        <label for="average">Average</label><br><br>
+
+        <p>Which services have you used?</p>
+
+        <input type="checkbox" id="web" name="service" value="Web Development">
+        <label for="web">Web Development</label><br>
+
+        <input type="checkbox" id="mobile" name="service" value="Mobile App">
+        <label for="mobile">Mobile App</label><br>
+
+        <input type="checkbox" id="cloud" name="service" value="Cloud Services">
+        <label for="cloud">Cloud Services</label><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>

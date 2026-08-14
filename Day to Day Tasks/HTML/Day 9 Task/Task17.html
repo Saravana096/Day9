@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 17 - Drag and Drop Gallery</h1>
+
+    <h2>Drag the Image</h2>
+
+    <img
+        id="image"
+        src="sample.jpg"
+        alt="Sample Image"
+        width="150"
+        draggable="true"
+        ondragstart="drag(event)"
+    >
+
+    <br><br>
+
+    <h2>Gallery Area</h2>
+
+    <div
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        style="width:300px; height:200px; border:1px solid black;">
+    </div>
+
+    <script>
+
+        function allowDrop(event) {
+
+            event.preventDefault();
+
+        }
+
+        function drag(event) {
+
+            event.dataTransfer.setData("text", event.target.id);
+
+        }
+
+        function drop(event) {
+
+            event.preventDefault();
+
+            var data = event.dataTransfer.getData("text");
+
+            event.target.appendChild(document.getElementById(data));
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!--Design a survey form with readonly inputs to show user ID and disabled 
+    inputs for unavailable options-->
+
+    <h1>Survey Form</h1>
+    
+    <form>
+        <label for="userid">User ID:</label><br>
+        <input type="text" id="userid" name="userid" readonly value="1001"><br><br>
+
+        <label for="feedback">Survey Feedback:</label><br>
+        <input type="text" id="feedback" name="feedback"><br><br>
+
+        <label for="available">Avalaible Option:</label><br>
+        <input type="text" id="available" name="available" value="General Survey"><br><br>
+
+        <label for="unavailable">Unavailable Option:</label><br>
+        <input type="text" id="unavailable" name="unavailable" disabled value="Premium Survey"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

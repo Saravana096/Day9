@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 33</title>
+</head>
+<body>
+    <!--Make a profile editor form with a hidden input for user ID, disabled fields 
+    for email, and a range slider for experience level.-->
+    
+    <form>
+
+    <h1>Profile Editor Form</h1>
+
+        <input type="hidden" name="user_id" value="2219163">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="Saravana"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value="s2nkumar.crazy@gmail.com" disabled><br><br>
+
+        <label for="experience">Experience Level</label><br>
+        <input type="range" id="experience" name="experience" min="1" max="20" value="0"><br><br>
+
+        <button type="submit">Update Profile</button>
+    </form>
+</body>
+</html>

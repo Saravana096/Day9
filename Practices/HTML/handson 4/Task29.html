@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Animated Banner using SVG</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Rectangular</h2>
+
+            <svg width="700" height="220">
+                <rect x="0" y="0" width="700" height="220" fill="skyblue">
+                    <animate attributeName="y" from="0" to="220" dur="6s" repeatCount="indefinite"/>
+                </rect>
+
+                <circle cx="100" cy="70" r="30" fill="gold">
+                    <animate attributeName="r" values="30;40;30" dur="2s" repeatCount="indefinite"/>
+                </circle>
+
+                <ellipse cx="350" cy="80" rx="45" ry="25" fill="white">
+                    <animate attributeName="cx" values="350;500;350" dur="6s" repeatCount="indefinite"/>
+                </ellipse>
+
+                <ellipse cx="390" cy="80" rx="45" ry="25" fill="white">
+                    <animate attributeName="cx" values="390;540;390" dur="6s" repeatCount="indefinite"/>
+                </ellipse>
+
+                <text x="180" y="170" font-size="36" fill="navy"> Welcome
+                    <animate attributeName="fill" values="navy;red;navy" dur="2s" repeatCount="indefinite"/>
+                </text>
+
+                <circle cx="560" cy="80" r="40" fill="white">
+                    <animate attributeName="fill" values="white;grey;white" dur="6s" repeatCount="indefinite"/>
+                </circle>
+
+                <rect x="520" y="120" width="740" height="220" fill="cyan">Wlcome
+                    <animate attributeName="x" by="420" dur="6s" repeatCount="indefinite"/>
+                </rect>
+
+                <ellipse cx="420" cy="140" rx="45" ry="25" fill="white">
+                    <animate attributeName="cx" values="420;540;420" dur="6s" repeatCount="indefinite"/> 
+                </ellipse>
+
+                <ellipse cx="460" cy="140" rx="45" ry="25" fill="white">
+                    <animate attributeName="cx" values="460;600;460" dur="6s" repeatCount="indefinite"/>
+                </ellipse>
+
+                <text x="520" y="30" font-size="36" fill="blue">Welcome
+                    <animate attributeName="font-size" from="10" to="50" dur="6s" repeatCount="indefinite"/>
+                </text>
+
+                <circle cx="530" cy="80" r="5" fill="grey">
+                    <animate attributeName="fill" values="grey;white;grey" dur="4s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="540" cy="60" r="5" fill="grey">
+                    <animate attributeName="fill" values="grey;skyblue;grey" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="560" cy="80" r="5" fill="grey">
+                    <animate attributeName="fill" values="grey;pink;grey" dur="5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="580" cy="60" r="5" fill="grey">
+                    <animate attributeName="fill" values="grey;yellow;grey" dur="6s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="580" cy="95" r="5" fill="grey">
+                    <animate attributeName="fill" values="grey;pink;grey" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="555" cy="95" r="5" fill="grey">
+                    <animate attributeName="cy" from="10" to="600" dur="3s" repeatCount="indefinite"/>
+                </circle>
+
+                <ellipse cx="620" cy="140" rx="35" ry="15" fill="white">
+                    <animate attributeName="cx" values="620;760;620" dur="6s" repeatCount="indefinite"/>
+                </ellipse>
+                <ellipse cx="660" cy="140" rx="35" ry="15" fill="white">
+                    <animate attributeName="cx" values="660;800;660" dur="6s" repeatCount="indefinite"/>
+                </ellipse>
+
+            </svg>
+        </section>
+    </main>
+</body>
+</html>

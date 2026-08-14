@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .faq{
+            width:80%;
+            max-width:800px;
+            margin:3rem auto;
+        }
+
+        .faq h1{
+            text-align:center;
+            margin-bottom:2rem;
+            color:#0d6efd;
+        }
+
+        .faq-item{
+            background:#fff;
+            border-radius:8px;
+            margin-bottom:1rem;
+            box-shadow:0 4px 10px rgba(0,0,0,0.15);
+            overflow:hidden;
+        }
+
+        .faq-item input{
+            display:none;
+        }
+
+        .faq-item label{
+            display:block;
+            padding:18px 20px;
+            font-size:1.1rem;
+            font-weight:bold;
+            cursor:pointer;
+            position:relative;
+        }
+
+        .faq-item label::after{
+            content:"+";
+            position:absolute;
+            right:20px;
+            font-size:1.5rem;
+            transition:0.3s;
+        }
+
+        .answer{
+            max-height:0;
+            overflow:hidden;
+            transition:max-height 0.4s ease;
+            padding:0 20px;
+        }
+
+        .answer p{
+            padding:15px 0;
+            line-height:1.6;
+        }
+
+        .faq-item input:checked + label + .answer{
+            max-height:200px;
+        }
+
+        .faq-item input:checked + label::after{
+            content:"−";
+        }
+    </style>
+</head>
+<body>
+    <section class="faq">
+
+        <h1>Frequently Asked Questions</h1>
+
+        <!-- FAQ 1 -->
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq1">
+
+            <label for="faq1">
+                What is HTML?
+            </label>
+
+            <div class="answer">
+                <p>
+                    HTML stands for HyperText Markup Language. It is used
+                    to create the structure of web pages.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FAQ 2 -->
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq2">
+
+            <label for="faq2">
+                What is CSS?
+            </label>
+
+            <div class="answer">
+                <p>
+                    CSS stands for Cascading Style Sheets. It is used to
+                    style HTML elements and create attractive web pages.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FAQ 3 -->
+
+        <div class="faq-item">
+
+            <input type="checkbox" id="faq3">
+
+            <label for="faq3">
+                Why use Responsive Design?
+            </label>
+
+            <div class="answer">
+                <p>
+                    Responsive design makes websites look good on mobile,
+                    tablet, and desktop devices.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>

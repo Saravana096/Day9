@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Cards</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:30px;
+        }
+
+        .container{
+            display:flex;
+            gap:25px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .card{
+            width:300px;
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            color:white;
+            position:relative;
+            transition:0.3s;
+        }
+
+        /* Different Background Colors */
+
+        .basic{
+            background:#3498db;
+        }
+
+        .featured{
+            background:#9b59b6;
+            border:4px solid gold;
+            transform:scale(1.05);
+        }
+
+        .enterprise{
+            background:#2ecc71;
+        }
+
+        /* Badge */
+
+        .badge{
+            position:absolute;
+            top:-15px;
+            left:50%;
+            transform:translateX(-50%);
+            background:gold;
+            color:black;
+            padding:6px 15px;
+            border-radius:20px;
+            font-weight:bold;
+        }
+
+        /* Heading */
+
+        .card h2{
+            margin-top:15px;
+            margin-bottom:20px;
+        }
+
+        .card h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .card span{
+            font-size:18px;
+        }
+
+        /* Features */
+
+        .card ul{
+            list-style:none;
+            margin-bottom:25px;
+        }
+
+        .card ul li{
+            margin:12px 0;
+            font-size:18px;
+        }
+
+        /* Button */
+
+        button{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            background:white;
+            color:#333;
+            font-size:17px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#222;
+            color:white;
+        }
+
+        /* Hover Effect */
+
+        .card:hover{
+            transform:scale(1.08);
+            box-shadow:0 12px 25px rgba(0,0,0,.3);
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+        .container{
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .card{
+            width:100%;
+            max-width:350px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Basic Plan -->
+        <div class="card basic">
+
+            <h2>Basic</h2>
+
+            <h1>$9<span>/Month</span></h1>
+
+            <ul>
+                <li>✔ 10 GB Storage</li>
+                <li>✔ 1 Website</li>
+                <li>✔ Email Support</li>
+                <li>❌ Free Domain</li>
+            </ul>
+
+            <button>Choose Plan</button>
+
+        </div>
+
+        <!-- Featured Plan -->
+        <div class="card featured">
+
+            <div class="badge">Most Popular</div>
+
+            <h2>Premium</h2>
+
+            <h1>$19<span>/Month</span></h1>
+
+            <ul>
+                <li>✔ 100 GB Storage</li>
+                <li>✔ 10 Websites</li>
+                <li>✔ 24/7 Support</li>
+                <li>✔ Free Domain</li>
+            </ul>
+
+            <button>Choose Plan</button>
+
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card enterprise">
+
+            <h2>Enterprise</h2>
+
+            <h1>$39<span>/Month</span></h1>
+
+            <ul>
+                <li>✔ Unlimited Storage</li>
+                <li>✔ Unlimited Websites</li>
+                <li>✔ Priority Support</li>
+                <li>✔ Free Domain</li>
+            </ul>
+
+            <button>Choose Plan</button>
+
+        </div>
+
+    </div>
+</body>
+</html>

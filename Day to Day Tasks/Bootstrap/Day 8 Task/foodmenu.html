@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .menu-container {
+            padding: 40px 20px;
+        }
+
+        .food-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .food-content {
+            padding: 20px;
+        }
+
+        .food-name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #198754;
+        }
+    </style>
+</head>
+<body>
+    <div class="container menu-container">
+
+        <h1 class="text-center mb-5">🍔 Food Menu</h1>
+
+        <div class="row g-4">
+
+            <!-- Food Item 1 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                        alt="Burger">
+
+                    <div class="food-content">
+                        <h2 class="food-name">Cheese Burger</h2>
+                        <p class="price">₹199</p>
+                        <button class="btn btn-primary w-100">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+                        alt="Pizza">
+
+                    <div class="food-content">
+                        <h2 class="food-name">Cheese Pizza</h2>
+                        <p class="price">₹299</p>
+                        <button class="btn btn-primary w-100">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                        alt="Samosa">
+
+                    <div class="food-content">
+                        <h2 class="food-name">Samosa</h2>
+                        <p class="price">₹80</p>
+                        <button class="btn btn-primary w-100">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 4 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                        alt="Pasta">
+
+                    <div class="food-content">
+                        <h2 class="food-name">Creamy Pasta</h2>
+                        <p class="price">₹249</p>
+                        <button class="btn btn-primary w-100">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 5 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1"
+                        alt="Grilled Chicken">
+
+                    <div class="food-content">
+                        <h2 class="food-name">Grilled Chicken</h2>
+                        <p class="price">₹349</p>
+                        <button class="btn btn-primary w-100">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 6 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+                        alt="Donut">
+
+                    <div class="food-content">
+                        <h2 class="food-name">Chocolate Donut</h2>
+                        <p class="price">₹99</p>
+                        <button class="btn btn-primary w-100">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

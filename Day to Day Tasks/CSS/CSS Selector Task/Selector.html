@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /*Universal Selector*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Element Selector*/
+        body{
+            background-color: sandybrown;
+            text-align: center;
+        }
+
+        /*Element Selector*/
+        header{
+            background-color: darkslategrey;
+            color: white;
+        }
+
+        /*Adjacent Sibling Selector*/
+        h2+p{
+            color: seagreen;
+            font-size: 18px;
+        }
+
+        /*Descendant Selector*/
+        nav a{
+            color:darkblue;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /*Element Selector*/
+        nav{
+            background-color:#D6EAF8;
+        }
+
+        /*Pseudo Selector*/
+        nav a:hover{
+            color:red;
+        }
+
+        /*Child Selector*/
+        header>h2{
+            color: white;
+            font-size: 18px;
+        }
+
+        /*Child Selector*/
+        header>h1{
+            color: goldenrod;
+            font-size: 40px;
+        }
+
+        /*Class Selector*/
+        .company{
+            background-color:white;
+            
+        }
+
+        /*Descendant Selector*/
+        .company h2{
+            color:firebrick;
+            font-size: 30px;
+        }
+
+        /*Class Selector*/
+        .services{
+            background-color:blanchedalmond;
+        }
+
+        /*Child Selector*/
+        ul>li{
+            color: brown;
+            font-size: 18px;
+        }
+
+        /*Descendant Selector*/
+        .services h3{
+            color:black;
+            font-size: 25px;
+        }
+
+        /*ID Selector*/
+        #form{
+            background-color:cornsilk;
+        }
+
+        /*Element Selector*/
+        button{
+            background-color: cornflowerblue;
+            color:ivory;
+        }
+
+        /*Pseudo Selector*/
+        #login:hover{
+            background-color: brown;
+            color: black;
+        }
+
+        /*Element Selector*/
+        footer{
+            background-color: darkslategrey;
+        }
+
+        /*Descendant Selector*/
+        footer small{
+            background-color: black;
+            color: white;
+        }
+
+        ul :nth-child(odd){
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SK Solutions</h1>
+        <h2>SK Technology for better tomorrow</h2>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section class="company">
+            <h2>Welcome to SK Solution</h2>
+            <p>We provide professional web development, UI/UX design, cloud computing, and software solutions for businesses.</p>
+        
+
+        <div class="services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>UL/UX Design</li>
+                <li>Cloud Computing</li>
+                <li>Digital Marketing</li>
+            </ul>
+        </div>
+
+        </section>
+
+        <section id="form">
+
+            <h2>Employee Login</h2>
+            <form>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required><br><br>
+
+                <input type="checkbox" id="remember" name="remember" required>
+                <label for="remember">Remember Me</label><br><br>
+
+                <button id="login" type="submit">Login</button><br><br>
+            </form>
+
+            
+        </section>
+    </main>
+
+     <footer>
+
+        <small>&copy; 2026 SK Solutions. All Rights Reserved.</small>
+
+    </footer>
+</body>
+</html>

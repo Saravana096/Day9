@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 13 - Remember Me Login</h1>
+
+    <form>
+
+        <label for="username">Username:</label><br>
+
+        <input type="text" id="username" name="username">
+
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="remember"
+            name="remember"
+        >
+
+        <label for="remember">Remember Me</label>
+
+        <br><br>
+
+        <button type="button" onclick="saveUsername()">
+            Login
+        </button>
+
+    </form>
+
+    <script>
+
+        window.onload = function () {
+
+            var savedUsername = localStorage.getItem("username");
+
+            if (savedUsername) {
+
+                document.getElementById("username").value = savedUsername;
+
+                document.getElementById("remember").checked = true;
+
+            }
+
+        };
+
+        function saveUsername() {
+
+            var username = document.getElementById("username").value;
+
+            var remember = document.getElementById("remember").checked;
+
+            if (remember) {
+
+                localStorage.setItem("username", username);
+
+            } else {
+
+                localStorage.removeItem("username");
+
+            }
+
+            alert("Login Successful");
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Filterable Form</title>
+</head>
+<body>
+    <h1>Advanced Filterable Form</h1>
+
+    <form>
+
+        <!-- Date Picker -->
+        <label for="date">Select Date:</label><br>
+        <input type="date" id="date" name="date" required>
+
+        <br><br>
+
+        <!-- Range Slider -->
+        <label for="price">Price Filter (0 - 100):</label><br>
+        <input type="range"
+               id="price"
+               name="price"
+               min="0"
+               max="100"
+               value="50">
+
+        <br><br>
+
+        <!-- Autocomplete using datalist -->
+        <label for="city">Select City:</label><br>
+        <input type="text"
+               id="city"
+               name="city"
+               list="cities"
+               placeholder="Choose a city"
+               required>
+
+        <datalist id="cities">
+            <option value="Chennai">
+            <option value="Coimbatore">
+            <option value="Madurai">
+            <option value="Salem">
+            <option value="Trichy">
+            <option value="Bengaluru">
+            <option value="Hyderabad">
+            <option value="Mumbai">
+        </datalist>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

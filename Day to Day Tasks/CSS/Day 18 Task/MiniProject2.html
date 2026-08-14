@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 850px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 40px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #2C3E50;
+            border: 1px solid #d9d9d9;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #d9d9d9;
+            font-size: 16px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ECF0F1;
+        }
+
+        .id-no {
+            color: red;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Employee Data</h1>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+
+            <tr>
+                <td class="id-no">101</td>
+                <td>Alice Johnson</td>
+                <td>Marketing</td>
+                <td>$60,000</td>
+            </tr>
+
+            <tr>
+                <td class="id-no">102</td>
+                <td>Bob Smith</td>
+                <td>IT</td>
+                <td>$75,000</td>
+            </tr>
+
+            <tr>
+                <td class="id-no">103</td>
+                <td>Charlie Brown</td>
+                <td>Finance</td>
+                <td>$70,000</td>
+            </tr>
+
+            <tr>
+                <td class="id-no">104</td>
+                <td>Diana Prince</td>
+                <td>HR</td>
+                <td>$65,000</td>
+            </tr>
+
+            <tr>
+                <td class="id-no">105</td>
+                <td>Edward Wilson</td>
+                <td>Operations</td>
+                <td>$68,000</td>
+            </tr>
+        </table> 
+    </div>   
+</body>
+</html>

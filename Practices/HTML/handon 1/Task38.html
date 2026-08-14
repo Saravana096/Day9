@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Complete Search</title>
+</head>
+<body>
+    <!--Make an autocomplete search field using <datalist> for options like Chrome, 
+    Firefox, Safari, etc.-->
+
+    <h1>Autocomplete Search</h1>
+
+    <form>
+        <label for="browser">Choose a Browser:</label><br>
+        <input type="text" id="browser" name="browser" list="browsers">
+
+        <datalist id="browsers">
+
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+            
+        </datalist>
+    </form>
+</body>
+</html>

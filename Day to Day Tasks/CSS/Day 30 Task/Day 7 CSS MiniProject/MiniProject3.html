@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Gallery</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:30px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .gallery{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .gallery img{
+            width:250px;
+            height:180px;
+            border-radius:10px;
+            border:3px solid #333;
+            object-fit:cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Image Gallery</h1>
+
+    <div class="gallery">
+
+        <img src="https://picsum.photos/id/1015/250/180" alt="Image 1">
+
+        <img src="https://picsum.photos/id/1025/250/180" alt="Image 2">
+
+        <img src="https://picsum.photos/id/1035/250/180" alt="Image 3">
+
+        <img src="https://picsum.photos/id/1045/250/180" alt="Image 4">
+
+        <img src="https://picsum.photos/id/1055/250/180" alt="Image 5">
+
+        <img src="https://picsum.photos/id/1065/250/180" alt="Image 6">
+
+        <img src="https://picsum.photos/id/1075/250/180" alt="Image 7">
+
+        <img src="https://picsum.photos/id/1075/250/180" alt="Image 8">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 1</title>
+
+    <style>
+
+        /*Task 1*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Task 2*/
+        h2 {
+            color: blue;
+            font-size: 24px;
+        }
+
+        /*Task 3*/
+        .highlight {
+            background-color: yellow;
+        }
+
+        /*Task 4*/
+        #cta {
+            color: white;
+            background-color: green;
+        }
+        
+        /*Task 5*/
+        a[target=_blank] {
+            color: purple;
+            font-family:fantasy;
+        }
+
+        /*Task 6*/
+        h1,h2,h3 {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /*Task 7*/
+        div p {
+            color:gold;
+            font-size: 12px;
+            background-color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Task 8*/
+        ul > li {
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            color: crimson;
+        }
+
+        /*Task 9*/
+        h1 + p {
+            font-style: italic;
+        }
+
+        /*Task 10*/
+        #cta:hover {
+            background-color:dimgrey;
+            font-weight: bold;
+            color: black;
+        }
+
+        /*Task 11*/
+        tr:nth-child(odd) {
+             background-color: gray;   
+        }
+
+        /*Task 12*/
+        h1::before{
+            content: "★";
+            color: gold;
+        }
+
+        /*Task 13*/
+        .completed::after{
+            content: " Done";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>My Learning Portal</h1>
+        <p>Learn HTML & CSS Easily</p>
+        <p>First Learn HTML then Go CSS</p>
+        
+        <h2>About Me</h2>
+
+        <p class="highlight">I am Saravanakumar. Learning a Python Fullstack Development from past 15 days.</p>
+
+        <div>
+        <p>Completed HTML5 Learning</p>
+        <p>Learning in CSS Style</p>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+        <h2>Topic Covered:</h2>
+
+            <p>These are covered in Python Fullstack Development Topic past 15 days Listed Below:</p>
+
+            <ul>
+
+                <li>HTML Tags</li>
+                <li>HTML Elements</li>
+                <li>Semantic HTML</li>
+                <li>HTML FORMS and TABLES</li>
+                <li>Links and Navigation</li>
+                <li>Image and Multimedia</li>
+                <li>CSS Selectors</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Learning Schedules:</h2>
+
+            <table border="3">
+
+                <tr>
+                    <th colspan="5">Timetable</th>
+                </tr>
+
+                <tr>
+                    <th>Days</th>
+                    <th colspan="4">Topic Covered</th>
+                </tr>
+
+                <tr>
+                    <td>Day 1</td>
+                    <td>HTML Introduction</td>
+                    <td>HTML Basic</td>
+                    <td>HTML Tag & Elements</td>
+                    <td>Semantic Tags</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Day 2</td>
+                    <td>Forms & Tables</td>
+                    <td>Link & Navigation</td>
+                    <td>Image & Media</td>
+                    <td>HTML Projects</td>
+                </tr>
+
+                <tr>
+                    <td>Day 3</td>
+                    <td>HTML Project</td>
+                    <td>CSS Introduction</td>
+                    <td>CSS Selector</td>
+                    <td>CSS Project</td>
+                </tr>
+
+            </table>
+        </section>
+        <hr>
+        <hr>
+        <section>
+            <h3>Login Details</h3>
+            <form>
+                <label for="name">User Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your username" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+                <button id="cta" type="submit">Login</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Completed Learning</h2>
+
+            <ul>
+                <li class="completed">HTML Basic</li>
+                <li class="completed">HTML Advanced</li>
+                <li>CSS Basic</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <nav>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <a href="https://www.youtube.co/" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </nav>
+
+    </footer>
+</body>
+</html>

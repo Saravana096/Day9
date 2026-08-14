@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(darkgrey, lightblue);
+            margin: 20px auto;
+            width: 900px;
+            padding: 15px;
+        }
+
+        header {
+            background: linear-gradient(skyblue, grey);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            color: hsl(220, 80%, 40%);
+            font-style: italic;
+        }
+
+        header p {
+            font-size: 14px;
+            display: inline-block;
+            color: hsl(220, 80%, 40%);
+            font-weight: bold;
+            font-style: oblique;
+        }
+
+        nav {
+            background: linear-gradient(rgba(200,0,0,0.5),rgba(255,100,100,0.8));
+            font-size: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            cursor: pointer;
+            background-color: rgba(200,0,0,0.5);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            
+        }
+
+        main {
+            background: conic-gradient(skyblue, rgb(120,70,0));
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        #head {
+            text-align: center;
+            font-size: 30px;
+            background: radial-gradient(rgb(120,70,0), skyblue);
+            border-radius: 10px;
+            padding: 20px 15px;
+            text-transform: uppercase;
+            color: hsl(220, 80%, 40%);
+        }
+
+        .about {
+            
+            width: 350px;
+            padding: 20px 15px;
+        }
+
+        .experience {
+            background: linear-gradient(skyblue, grey);
+            width: 350px;
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+
+        .experience h2 {
+            font-size: 30px;
+            background: radial-gradient(rgb(120,70,0), skyblue);
+            border-radius: 10px;
+            padding: 5px; 
+            text-align: center;
+            text-transform: uppercase;
+            color: hsl(220, 80%, 40%);
+
+        }
+
+        .experience p {
+            font-size: 15px;
+            font-family: monospace;
+            line-height: 1.6;
+            color: rgb(120,70,0);
+        }
+
+        #skills {
+            background: linear-gradient(skyblue, grey);
+            width: 350px;
+            height: 390px;
+            margin: 10px;
+            padding: 10px;
+            overflow: hidden;
+            margin-left: auto;
+        }
+
+        #skills h2 {
+            font-size: 30px;
+            background: radial-gradient(rgb(120,70,0), skyblue);
+            border-radius: 10px;
+            padding: 5px; 
+            text-align: center;
+            text-transform: uppercase;
+            color: hsl(220, 80%, 40%);
+        }
+
+        #skills h3 {
+            font-size: 15px;
+            background: radial-gradient(rgb(120,70,0), skyblue);
+            border-radius: 10px;
+            padding: 10px 5px;
+            width: 70px;
+            color: hsl(80, 100%, 80%);
+        }
+
+        #skills li {
+            color: rgb(120,70,0);
+            font-family: monospace;
+            font-size: 15px;
+        }
+
+        #certificate {
+            background: linear-gradient(skyblue, grey);
+            clear: right;
+            width: 350px;
+            padding: 20px 15px;
+            margin-left: auto;
+
+        }
+
+        #certificate h2{
+            font-size: 30px;
+            background: radial-gradient(rgb(120,70,0), skyblue);
+            border-radius: 10px;
+            padding: 5px; 
+            text-align: center;
+            text-transform: uppercase;
+            color: hsl(220, 80%, 40%);
+        }
+
+        #certificate p {
+            font-size: 15px;
+            font-family: monospace;
+            line-height: 1.6;
+            color: rgb(120,70,0);
+        }
+
+        footer {
+            background: linear-gradient(skyblue, grey);
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        footer small {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Saravanakumar V</h1>
+
+        <p>Email: s2nkumarcrazy@gmail.com</p>
+        <p>Tel: 9043131257</p>
+
+        
+        <nav>
+
+            <a href="#project">Project</a>
+            <a href="#skills">Skills</a>
+            <a href="#service">Service</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h2 id="head">About Me</h2>
+
+        <section class="about">
+
+            <img src="profile.jpeg" width="300" height="300" alt="profile picture">
+
+        </section>
+
+        <section id="certificate">
+
+            <h2>Certification</h2>
+
+            <p>
+                Completed the AI Python Full Stack Development course at Vetri IT Solutions. Gained hands-on 
+                experience in building responsive web pages and working on live projects using HTML, CSS, Python, 
+                and modern web development concepts.
+            </p>
+
+        </section>
+
+        <section class="experience">
+
+            <h2>Experience</h2>
+
+            <p>Senior Process Executive - Cognizant - 2022 Aug to Till Now</p>
+
+            <p>Customer Support Associate - Firstsource - 2021 Feb to 2022 May</p>
+
+        </section>
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <h3>Frontend</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap</li>
+            </ul>
+
+            <h3>Backend</h3>
+
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>React.JS</li>
+                <li>Node.js</li>
+                <li>Django</li>
+            </ul>
+        </section>
+
+        <footer>
+
+            <small>&copy; 2026 Saravanakumar V. All Rights Reserved.</small>
+
+        </footer>
+
+    </main>
+</body>
+</html>

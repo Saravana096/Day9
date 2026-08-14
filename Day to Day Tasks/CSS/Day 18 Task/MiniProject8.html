@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+
+            background:#f4f4f4;
+            padding:30px;
+
+        }
+
+        h1{
+
+            text-align:center;
+            margin-bottom:30px;
+            color:#2C3E50;
+
+        }
+
+        /* Gallery */
+
+        .gallery{
+
+            display:grid;
+
+            grid-template-columns:repeat(4,1fr);
+
+            gap:20px;
+
+        }
+
+        /* Image Box */
+
+        .image-box{
+
+            overflow:hidden;
+
+            border-radius:10px;
+
+            box-shadow:0 5px 10px rgba(0,0,0,.2);
+
+        }
+
+        /* Images */
+
+        .image-box img{
+
+            width:100%;
+
+            height:250px;
+
+            object-fit:cover;
+
+            transition:.4s;
+
+        }
+
+        /* Hover Effect */
+
+        .image-box:hover img{
+
+            transform:scale(1.1);
+
+        }
+
+        /* Tablet */
+
+        @media(max-width:992px){
+
+        .gallery{
+
+            grid-template-columns:repeat(2,1fr);
+
+        }
+
+        }
+
+        /* Mobile */
+
+        @media(max-width:576px){
+
+        .gallery{
+
+            grid-template-columns:1fr;
+
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="image-box">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+
+        <div class="image-box">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+
+        <div class="image-box">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+
+        <div class="image-box">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+
+        <div class="image-box">
+            <img src="image5.jpg" alt="Image 5">
+        </div>
+
+        <div class="image-box">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+
+        <div class="image-box">
+            <img src="image7.jpg" alt="Image 7">
+        </div>
+
+        <div class="image-box">
+            <img src="image8.jpg" alt="Image 8">
+        </div>
+
+    </div>
+</body>
+</html>

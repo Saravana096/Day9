@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <h1>Task 16 - Canvas Progress Bar</h1>
+
+    <canvas
+        id="progressBar"
+        width="320"
+        height="60"
+        style="border:1px solid black;">
+    </canvas>
+
+    <script>
+
+        var canvas = document.getElementById("progressBar");
+
+        var context = canvas.getContext("2d");
+
+        var progress = 0;
+
+        function loadProgress() {
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            context.strokeRect(10, 15, 300, 30);
+
+            context.fillRect(10, 15, progress, 30);
+
+            progress += 10;
+
+            if (progress <= 300) {
+
+                setTimeout(loadProgress, 100);
+
+            }
+
+        }
+
+        loadProgress();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 5</title>
+</head>
+<body>
+    <h1>Survey Forms</h1>
+
+    <form action="/submit" method="get">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <p>
+            How often do you rate our course
+        </p>
+
+        <input type="radio" id="rating1" name="course" value="HTML">
+        <label for="rating1">HTML</label><br>
+
+        <input type="radio" id="rating2" name="course" value="CSS">
+        <label for="rating2">CSS</label><br>
+
+        <input type="radio" id="rating3" name="course" value="Javascript">
+        <label for="rating3">Javascript</label><br>
+
+        <p>
+            Which Course you like more?
+        </p>
+
+        <input type="checkbox" id="html" name="language">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="language">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="javascript" name="language">
+        <label for="javascript">Javascript</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

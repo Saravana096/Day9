@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .product-container {
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-card .card-body {
+            padding: 20px;
+        }
+
+        .product-price {
+            color: #198754;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-card .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container product-container">
+
+        <h1 class="text-center mb-5">🛍️ Product Listing</h1>
+
+        <!-- Bootstrap Row -->
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                        class="card-img-top"
+                        alt="Watch">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Watch</h5>
+
+                        <p class="card-text">
+                            Stylish watch for everyday use.
+                        </p>
+
+                        <p class="product-price">₹1,499</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                        class="card-img-top"
+                        alt="Shoes">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Running Shoes</h5>
+
+                        <p class="card-text">
+                            Comfortable shoes for running.
+                        </p>
+
+                        <p class="product-price">₹2,499</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                        class="card-img-top"
+                        alt="Headphones">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Headphones</h5>
+
+                        <p class="card-text">
+                            High-quality wireless headphones.
+                        </p>
+
+                        <p class="product-price">₹1,999</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546435770-a3e426bf472b"
+                        class="card-img-top"
+                        alt="Backpack">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Travel Backpack</h5>
+
+                        <p class="card-text">
+                            Durable backpack for travel.
+                        </p>
+
+                        <p class="product-price">₹1,299</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1572635196237-14b3f281503f"
+                        class="card-img-top"
+                        alt="Sunglasses">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Sunglasses</h5>
+
+                        <p class="card-text">
+                            Modern sunglasses with UV protection.
+                        </p>
+
+                        <p class="product-price">₹899</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1585386959984-a41552231658"
+                        class="card-img-top"
+                        alt="Perfume">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Perfume</h5>
+
+                        <p class="card-text">
+                            Long-lasting fragrance for everyone.
+                        </p>
+
+                        <p class="product-price">₹1,799</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544717305-2782549b5136"
+                        class="card-img-top"
+                        alt="T-Shirt">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Cotton T-Shirt</h5>
+
+                        <p class="card-text">
+                            Soft and comfortable cotton T-shirt.
+                        </p>
+
+                        <p class="product-price">₹599</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card product-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                        class="card-img-top"
+                        alt="Camera">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Camera</h5>
+
+                        <p class="card-text">
+                            Compact camera for photography.
+                        </p>
+
+                        <p class="product-price">₹24,999</p>
+
+                        <button class="btn btn-primary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
