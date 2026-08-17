@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .product-section {
+            padding: 50px 0;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-card .card-body {
+            padding: 20px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #198754;
+        }
+
+        .rating {
+            color: #f5a623;
+            margin-bottom: 15px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-group .btn {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                🛍️ ShopZone
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#shoppingNavbar"
+                aria-controls="shoppingNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="shoppingNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">
+                            Products
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">
+                            Categories
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">
+                            🛒 Cart
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section id="products" class="product-section">
+
+        <div class="container">
+
+            <h1 class="text-center fw-bold mb-5">
+                🛍️ Our Products
+            </h1>
+
+            <div class="row g-4">
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                            class="card-img-top"
+                            alt="Watch">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Classic Watch
+                            </h5>
+
+                            <p class="card-text">
+                                Stylish watch for everyday use.
+                            </p>
+
+                            <p class="product-price">
+                                ₹1,499
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐⭐
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                            class="card-img-top"
+                            alt="Running Shoes">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Running Shoes
+                            </h5>
+
+                            <p class="card-text">
+                                Comfortable shoes for running.
+                            </p>
+
+                            <p class="product-price">
+                                ₹2,499
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐☆
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                            class="card-img-top"
+                            alt="Headphones">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Wireless Headphones
+                            </h5>
+
+                            <p class="card-text">
+                                High-quality wireless headphones.
+                            </p>
+
+                            <p class="product-price">
+                                ₹1,999
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐⭐
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1546435770-a3e426bf472b"
+                            class="card-img-top"
+                            alt="Backpack">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Travel Backpack
+                            </h5>
+
+                            <p class="card-text">
+                                Durable backpack for travel.
+                            </p>
+
+                            <p class="product-price">
+                                ₹1,299
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐☆
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1572635196237-14b3f281503f"
+                            class="card-img-top"
+                            alt="Sunglasses">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Sunglasses
+                            </h5>
+
+                            <p class="card-text">
+                                Stylish sunglasses with UV protection.
+                            </p>
+
+                            <p class="product-price">
+                                ₹899
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐☆
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1585386959984-a41552231658"
+                            class="card-img-top"
+                            alt="Perfume">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Premium Perfume
+                            </h5>
+
+                            <p class="card-text">
+                                Long-lasting premium fragrance.
+                            </p>
+
+                            <p class="product-price">
+                                ₹1,799
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐⭐
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+                            class="card-img-top"
+                            alt="T-Shirt">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Cotton T-Shirt
+                            </h5>
+
+                            <p class="card-text">
+                                Soft and comfortable cotton T-shirt.
+                            </p>
+
+                            <p class="product-price">
+                                ₹599
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐☆
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                            class="card-img-top"
+                            alt="Camera">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Digital Camera
+                            </h5>
+
+                            <p class="card-text">
+                                Compact camera for photography.
+                            </p>
+
+                            <p class="product-price">
+                                ₹24,999
+                            </p>
+
+                            <p class="rating">
+                                ⭐⭐⭐⭐⭐
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Buy Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <p class="mb-0">
+            © 2026 ShopZone. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

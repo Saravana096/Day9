@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Healthcare Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f9fc;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #0dcaf0);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+
+        .doctor-section {
+            padding: 60px 0;
+        }
+
+
+        .doctor-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .doctor-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .doctor-card .card-body {
+            padding: 20px;
+        }
+
+        .specialization {
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+        .experience {
+            color: #6c757d;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-group .btn {
+            flex: 1;
+        }
+
+
+        .services-section {
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+        .service-box {
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+
+        .contact-section {
+            padding: 60px 20px;
+        }
+
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                🏥 CityCare Hospital
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#hospitalNavbar"
+                aria-controls="hospitalNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="hospitalNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doctors">
+                            Doctors
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#departments">
+                            Departments
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+    
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                        <a
+                            href="tel:108"
+                            class="btn btn-danger">
+                            🚨 Emergency: 108
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Quality Healthcare You Can Trust 🏥</h1>
+
+            <p class="lead">
+                Expert doctors, modern facilities and compassionate care.
+            </p>
+
+            <a href="#doctors" class="btn btn-light btn-lg">
+                Find a Doctor
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="doctors" class="doctor-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Our Doctors
+            </h2>
+
+            <div class="row g-4">
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card doctor-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d"
+                            class="card-img-top"
+                            alt="Dr. Arun Kumar">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Dr. Arun Kumar
+                            </h4>
+
+                            <p class="specialization">
+                                Cardiologist
+                            </p>
+
+                            <p class="experience">
+                                Experience: 15 Years
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Profile
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Book Appointment
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card doctor-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2"
+                            class="card-img-top"
+                            alt="Dr. Priya Sharma">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Dr. Priya Sharma
+                            </h4>
+
+                            <p class="specialization">
+                                Pediatrician
+                            </p>
+
+                            <p class="experience">
+                                Experience: 12 Years
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Profile
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Book Appointment
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card doctor-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1537368910025-700350fe46c7"
+                            class="card-img-top"
+                            alt="Dr. Rahul Raj">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Dr. Rahul Raj
+                            </h4>
+
+                            <p class="specialization">
+                                Neurologist
+                            </p>
+
+                            <p class="experience">
+                                Experience: 18 Years
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Profile
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Book Appointment
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card doctor-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1594824476967-48c8b964273f"
+                            class="card-img-top"
+                            alt="Dr. Meena Raj">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Dr. Meena Raj
+                            </h4>
+
+                            <p class="specialization">
+                                Dermatologist
+                            </p>
+
+                            <p class="experience">
+                                Experience: 10 Years
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Profile
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Book Appointment
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card doctor-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1582750433449-648ed127bb54"
+                            class="card-img-top"
+                            alt="Dr. Karthik Kumar">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Dr. Karthik Kumar
+                            </h4>
+
+                            <p class="specialization">
+                                Orthopedic Surgeon
+                            </p>
+
+                            <p class="experience">
+                                Experience: 14 Years
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Profile
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Book Appointment
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card doctor-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551601651-2a8555f1a136"
+                            class="card-img-top"
+                            alt="Dr. Sneha Kumar">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Dr. Sneha Kumar
+                            </h4>
+
+                            <p class="specialization">
+                                Gynecologist
+                            </p>
+
+                            <p class="experience">
+                                Experience: 11 Years
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Profile
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Book Appointment
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="departments" class="services-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Our Departments
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="service-box">
+
+                        <div class="fs-1">❤️</div>
+
+                        <h4>Cardiology</h4>
+
+                        <p>
+                            Advanced diagnosis and treatment
+                            for heart-related conditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="service-box">
+
+                        <div class="fs-1">🧠</div>
+
+                        <h4>Neurology</h4>
+
+                        <p>
+                            Specialized care for neurological
+                            disorders and conditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="service-box">
+
+                        <div class="fs-1">🦴</div>
+
+                        <h4>Orthopedics</h4>
+
+                        <p>
+                            Comprehensive treatment for bones,
+                            joints and muscles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="services" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Our Services
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card border-0 shadow text-center p-4 h-100">
+
+                        <div class="fs-1">
+                            🚑
+                        </div>
+
+                        <h4>Emergency Care</h4>
+
+                        <p>
+                            24/7 emergency medical services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card border-0 shadow text-center p-4 h-100">
+
+                        <div class="fs-1">
+                            🧪
+                        </div>
+
+                        <h4>Laboratory</h4>
+
+                        <p>
+                            Modern diagnostic laboratory services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card border-0 shadow text-center p-4 h-100">
+
+                        <div class="fs-1">
+                            💊
+                        </div>
+
+                        <h4>Pharmacy</h4>
+
+                        <p>
+                            Convenient in-hospital pharmacy services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Contact Us
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6">
+
+                    <div class="card border-0 shadow p-4">
+
+                        <p>
+                            <strong>📍 Address:</strong><br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                        <p>
+                            <strong>📧 Email:</strong><br>
+                            info@citycarehospital.com
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>📞 Phone:</strong><br>
+                            +91 98765 43210
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p class="mb-0">
+            © 2026 CityCare Hospital. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

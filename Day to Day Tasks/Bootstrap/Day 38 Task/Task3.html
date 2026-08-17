@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+
+        .course-section {
+            padding: 60px 0;
+        }
+
+
+        .course-card {
+            border: none;
+            border-radius: 15px;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card .card-body {
+            padding: 25px;
+        }
+
+        .duration {
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .course-description {
+            min-height: 75px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-group .btn {
+            flex: 1;
+        }
+
+    
+        .about-section {
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+   
+        .trainer-section {
+            padding: 60px 20px;
+        }
+
+    
+        .contact-section {
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+  
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+
+            <a class="navbar-brand fw-bold" href="#">
+                🎓 LearnHub
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#courseNavbar"
+                aria-controls="courseNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="courseNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trainers">
+                            Trainers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Learn. Grow. Succeed. 🚀</h1>
+
+            <p class="lead">
+                Build your skills with our industry-focused courses.
+            </p>
+
+            <a href="#courses" class="btn btn-light btn-lg">
+                Explore Courses
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="courses" class="course-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Our Courses
+            </h2>
+
+            <div class="row g-4">
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card course-card">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                HTML & CSS
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 4 Weeks
+                            </p>
+
+                            <p class="course-description">
+                                Learn HTML5 and CSS3 from the basics
+                                and build responsive websites.
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Course
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Enroll Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card course-card">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                JavaScript
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 6 Weeks
+                            </p>
+
+                            <p class="course-description">
+                                Master JavaScript fundamentals, DOM,
+                                events and modern JavaScript concepts.
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Course
+                                </button>
+
+                                <button class="btn btn-warning">
+                                    Enroll Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card course-card">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Python Programming
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 8 Weeks
+                            </p>
+
+                            <p class="course-description">
+                                Learn Python programming, functions,
+                                OOP, modules and real-world projects.
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Course
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Enroll Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card course-card">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                React JS
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 6 Weeks
+                            </p>
+
+                            <p class="course-description">
+                                Build modern interactive web applications
+                                using React components and hooks.
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Course
+                                </button>
+
+                                <button class="btn btn-warning">
+                                    Enroll Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card course-card">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Node.js
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 7 Weeks
+                            </p>
+
+                            <p class="course-description">
+                                Learn backend development, Express.js,
+                                APIs and server-side programming.
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Course
+                                </button>
+
+                                <button class="btn btn-success">
+                                    Enroll Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card course-card">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                Full Stack Development
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 12 Weeks
+                            </p>
+
+                            <p class="course-description">
+                                Become a full stack developer by learning
+                                frontend, backend and database technologies.
+                            </p>
+
+                            <div class="button-group">
+
+                                <button class="btn btn-primary">
+                                    View Course
+                                </button>
+
+                                <button class="btn btn-warning">
+                                    Enroll Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="trainers" class="trainer-section bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Our Trainers
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card text-center border-0 shadow p-3 h-100">
+
+                        <div class="card-body">
+
+                            <h4>
+                                👨‍💻 Arun Kumar
+                            </h4>
+
+                            <p>
+                                Full Stack Development Trainer
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card text-center border-0 shadow p-3 h-100">
+
+                        <div class="card-body">
+
+                            <h4>
+                                👩‍💻 Priya Sharma
+                            </h4>
+
+                            <p>
+                                Python & AI Trainer
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card text-center border-0 shadow p-3 h-100">
+
+                        <div class="card-body">
+
+                            <h4>
+                                👨‍💻 Rahul Raj
+                            </h4>
+
+                            <p>
+                                JavaScript & React Trainer
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8 text-center">
+
+                    <h2 class="fw-bold mb-4">
+                        About LearnHub
+                    </h2>
+
+                    <p>
+                        LearnHub is an online learning platform designed
+                        to help students develop practical technology skills.
+                        Our courses focus on hands-on learning, projects
+                        and industry-relevant technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Contact Us
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6">
+
+                    <div class="card border-0 shadow p-4">
+
+                        <p>
+                            <strong>📍 Address:</strong><br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                        <p>
+                            <strong>📧 Email:</strong><br>
+                            support@learnhub.com
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>📞 Phone:</strong><br>
+                            +91 98765 43210
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p class="mb-0">
+            © 2026 LearnHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

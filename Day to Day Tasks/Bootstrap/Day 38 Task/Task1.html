@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #ff6b35, #ff9f1c);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+
+        .food-section {
+            padding: 60px 0;
+        }
+
+        .food-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .food-card .card-body {
+            padding: 20px;
+        }
+
+        .food-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #198754;
+        }
+
+        .food-card .btn {
+            width: 100%;
+        }
+
+
+        .about-section {
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+
+        .contact-section {
+            padding: 60px 20px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                🍔 FoodExpress
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#foodNavbar"
+                aria-controls="foodNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="foodNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Delicious Food Delivered 🍔</h1>
+
+            <p class="lead">
+                Order your favourite meals from the comfort of your home.
+            </p>
+
+            <a href="#menu" class="btn btn-light btn-lg">
+                View Menu
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="menu" class="food-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Our Menu
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card food-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                            class="card-img-top"
+                            alt="Burger">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Cheese Burger
+                            </h5>
+
+                            <p class="card-text">
+                                Juicy burger with cheese and fresh vegetables.
+                            </p>
+
+                            <p class="food-price">
+                                ₹199
+                            </p>
+
+                            <button class="btn btn-primary">
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card food-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+                            class="card-img-top"
+                            alt="Pizza">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Cheese Pizza
+                            </h5>
+
+                            <p class="card-text">
+                                Hot and delicious pizza loaded with cheese.
+                            </p>
+
+                            <p class="food-price">
+                                ₹299
+                            </p>
+
+                            <button class="btn btn-success">
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card food-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb"
+                            class="card-img-top"
+                            alt="Pasta">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Creamy Pasta
+                            </h5>
+
+                            <p class="card-text">
+                                Creamy pasta prepared with fresh ingredients.
+                            </p>
+
+                            <p class="food-price">
+                                ₹249
+                            </p>
+
+                            <button class="btn btn-danger">
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card food-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                            class="card-img-top"
+                            alt="Chicken Burger">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Chicken Burger
+                            </h5>
+
+                            <p class="card-text">
+                                Crispy chicken burger with special sauce.
+                            </p>
+
+                            <p class="food-price">
+                                ₹229
+                            </p>
+
+                            <button class="btn btn-warning">
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card food-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                            class="card-img-top"
+                            alt="Italian Pizza">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Italian Pizza
+                            </h5>
+
+                            <p class="card-text">
+                                Traditional Italian pizza with fresh toppings.
+                            </p>
+
+                            <p class="food-price">
+                                ₹349
+                            </p>
+
+                            <button class="btn btn-info">
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+
+                    <div class="card food-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+                            class="card-img-top"
+                            alt="Donut">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Chocolate Donut
+                            </h5>
+
+                            <p class="card-text">
+                                Soft chocolate donut with delicious topping.
+                            </p>
+
+                            <p class="food-price">
+                                ₹99
+                            </p>
+
+                            <button class="btn btn-secondary">
+                                Order Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8 text-center">
+
+                    <h2 class="fw-bold mb-4">
+                        About FoodExpress
+                    </h2>
+
+                    <p>
+                        FoodExpress is an online food ordering platform
+                        that brings delicious meals directly to your doorstep.
+                        Choose from a variety of dishes and enjoy fast delivery.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Contact Us
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-6">
+
+                    <div class="card shadow border-0 p-4">
+
+                        <p>
+                            <strong>📍 Address:</strong><br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                        <p>
+                            <strong>📧 Email:</strong><br>
+                            support@foodexpress.com
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>📞 Phone:</strong><br>
+                            +91 98765 43210
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p class="mb-0">
+            © 2026 FoodExpress. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
