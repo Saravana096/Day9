@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback & Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        /* Support Section */
+        .support-section {
+            padding: 60px 20px;
+        }
+
+        .support-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Modal Header */
+        .modal-header {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .modal-header .btn-close {
+            filter: brightness(0) invert(1);
+        }
+
+        /* Rating */
+        .rating-box {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <!-- Brand -->
+
+            <a class="navbar-brand fw-bold" href="#">
+                ⭐ Customer Support
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#feedbackNavbar"
+                aria-controls="feedbackNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar Content -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="feedbackNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#support">
+                            Support
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                        <!-- Give Feedback Button -->
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#feedbackModal">
+
+                            Give Feedback
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>
+                We Value Your Feedback ⭐
+            </h1>
+
+            <p class="lead">
+                Your feedback helps us improve our products and services.
+            </p>
+
+            <!-- Open Feedback Modal -->
+
+            <button
+                type="button"
+                class="btn btn-light btn-lg mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+
+                Give Feedback
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SUPPORT SECTION ================= -->
+
+    <section id="support" class="support-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8">
+
+                    <div class="support-card text-center">
+
+                        <h2 class="mb-4">
+                            Customer Support
+                        </h2>
+
+                        <p>
+                            We are always happy to hear from our customers.
+                            Share your experience with us and help us
+                            provide better service.
+                        </p>
+
+                        <p>
+                            Your suggestions and feedback are valuable
+                            to our team.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-success"
+                            data-bs-toggle="modal"
+                            data-bs-target="#feedbackModal">
+
+                            Share Your Feedback
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SUCCESS ALERT ================= -->
+
+    <div class="container mt-4">
+
+        <div
+            id="successAlert"
+            class="alert alert-success alert-dismissible fade"
+            role="alert">
+
+            <strong>Thank you!</strong>
+            Thank you for your valuable feedback!
+
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close">
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FEEDBACK MODAL ================= -->
+
+    <div
+        class="modal fade"
+        id="feedbackModal"
+        tabindex="-1"
+        aria-labelledby="feedbackModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+
+                    <h5
+                        class="modal-title"
+                        id="feedbackModalLabel">
+
+                        ⭐ Customer Feedback Form
+
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+
+
+                <!-- Modal Body -->
+
+                <div class="modal-body">
+
+                    <form id="feedbackForm">
+
+
+                        <!-- Customer Name -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="customerName"
+                                class="form-label">
+
+                                Customer Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="customerName"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="customerEmail"
+                                class="form-label">
+
+                                Email
+
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="customerEmail"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <!-- Rating -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Rating
+                            </label>
+
+                            <div class="rating-box">
+
+
+                                <!-- 5 Stars -->
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="rating"
+                                        id="rating5"
+                                        value="5"
+                                        required>
+
+                                    <label
+                                        class="form-check-label"
+                                        for="rating5">
+
+                                        ⭐⭐⭐⭐⭐
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- 4 Stars -->
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="rating"
+                                        id="rating4"
+                                        value="4">
+
+                                    <label
+                                        class="form-check-label"
+                                        for="rating4">
+
+                                        ⭐⭐⭐⭐
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- 3 Stars -->
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="rating"
+                                        id="rating3"
+                                        value="3">
+
+                                    <label
+                                        class="form-check-label"
+                                        for="rating3">
+
+                                        ⭐⭐⭐
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- 2 Stars -->
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="rating"
+                                        id="rating2"
+                                        value="2">
+
+                                    <label
+                                        class="form-check-label"
+                                        for="rating2">
+
+                                        ⭐⭐
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- 1 Star -->
+
+                                <div class="form-check">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="rating"
+                                        id="rating1"
+                                        value="1">
+
+                                    <label
+                                        class="form-check-label"
+                                        for="rating1">
+
+                                        ⭐
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Service Type -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="serviceType"
+                                class="form-label">
+
+                                Service Type
+
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="serviceType"
+                                required>
+
+                                <option selected disabled>
+                                    Select service type
+                                </option>
+
+                                <option value="customer-service">
+                                    Customer Service
+                                </option>
+
+                                <option value="product">
+                                    Product
+                                </option>
+
+                                <option value="delivery">
+                                    Delivery
+                                </option>
+
+                                <option value="technical-support">
+                                    Technical Support
+                                </option>
+
+                                <option value="billing">
+                                    Billing
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Feedback -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="feedback"
+                                class="form-label">
+
+                                Feedback
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="feedback"
+                                rows="5"
+                                placeholder="Write your feedback here..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- Agree to Terms -->
+
+                        <div class="mb-3">
+
+                            <div class="form-check">
+
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="terms"
+                                    required>
+
+                                <label
+                                    class="form-check-label"
+                                    for="terms">
+
+                                    I agree to the Terms and Conditions.
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+                <!-- Modal Footer -->
+
+                <div class="modal-footer">
+
+                    <!-- Close Button -->
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+
+                    <!-- Submit Feedback Button -->
+
+                    <button
+                        type="submit"
+                        form="feedbackForm"
+                        class="btn btn-primary">
+
+                        Submit Feedback
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p class="mb-0">
+            © 2026 Customer Support. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- ================= CUSTOM JAVASCRIPT ================= -->
+
+    <script>
+
+        const feedbackForm =
+            document.getElementById("feedbackForm");
+
+        feedbackForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            // Get Bootstrap Modal
+            const modalElement =
+                document.getElementById("feedbackModal");
+
+            const modal =
+                bootstrap.Modal.getInstance(modalElement);
+
+            // Close Modal
+            modal.hide();
+
+            // Show Success Alert
+            const successAlert =
+                document.getElementById("successAlert");
+
+            successAlert.classList.add("show");
+
+            // Reset Form
+            feedbackForm.reset();
+
+        });
+
+    </script>
+</body>
+</html>

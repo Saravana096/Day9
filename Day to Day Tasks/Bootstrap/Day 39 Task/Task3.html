@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Enrollment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        /* Course Section */
+        .course-section {
+            padding: 60px 0;
+        }
+
+        /* Course Card */
+        .course-card {
+            border: none;
+            border-radius: 15px;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-card .card-body {
+            padding: 25px;
+        }
+
+        .duration {
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .description {
+            min-height: 80px;
+        }
+
+        .course-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        /* Modal */
+        .modal-header {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .modal-header .btn-close {
+            filter: brightness(0) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                📚 LearnOnline
+            </a>
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#courseNavbar"
+                aria-controls="courseNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navbar Links -->
+
+            <div class="collapse navbar-collapse" id="courseNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Learn New Skills 🚀</h1>
+
+            <p class="lead">
+                Choose a course and start your learning journey today.
+            </p>
+
+            <a href="#courses" class="btn btn-light btn-lg">
+                Explore Courses
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COURSE CARDS ================= -->
+
+    <section id="courses" class="course-section">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                Popular Courses
+            </h2>
+
+            <div class="row g-4">
+
+
+                <!-- ================= COURSE 1 ================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card course-card">
+
+                        <div class="card-body text-center">
+
+                            <div class="course-icon">
+                                💻
+                            </div>
+
+                            <h4 class="card-title">
+                                Web Development
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 8 Weeks
+                            </p>
+
+                            <p class="description">
+                                Learn HTML, CSS, JavaScript and
+                                build responsive websites.
+                            </p>
+
+                            <!-- Enroll Button -->
+
+                            <button
+                                type="button"
+                                class="btn btn-primary w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#enrollmentModal">
+
+                                Enroll Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 2 ================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card course-card">
+
+                        <div class="card-body text-center">
+
+                            <div class="course-icon">
+                                🐍
+                            </div>
+
+                            <h4 class="card-title">
+                                Python Programming
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 10 Weeks
+                            </p>
+
+                            <p class="description">
+                                Learn Python programming, functions,
+                                OOP and real-world applications.
+                            </p>
+
+                            <!-- Enroll Button -->
+
+                            <button
+                                type="button"
+                                class="btn btn-success w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#enrollmentModal">
+
+                                Enroll Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 3 ================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card course-card">
+
+                        <div class="card-body text-center">
+
+                            <div class="course-icon">
+                                ⚛️
+                            </div>
+
+                            <h4 class="card-title">
+                                React JS
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 6 Weeks
+                            </p>
+
+                            <p class="description">
+                                Build modern web applications using
+                                React components and hooks.
+                            </p>
+
+                            <!-- Enroll Button -->
+
+                            <button
+                                type="button"
+                                class="btn btn-warning w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#enrollmentModal">
+
+                                Enroll Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= COURSE 4 ================= -->
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card course-card">
+
+                        <div class="card-body text-center">
+
+                            <div class="course-icon">
+                                🤖
+                            </div>
+
+                            <h4 class="card-title">
+                                Artificial Intelligence
+                            </h4>
+
+                            <p class="duration">
+                                ⏱ Duration: 12 Weeks
+                            </p>
+
+                            <p class="description">
+                                Learn AI fundamentals, machine learning
+                                concepts and practical applications.
+                            </p>
+
+                            <!-- Enroll Button -->
+
+                            <button
+                                type="button"
+                                class="btn btn-danger w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#enrollmentModal">
+
+                                Enroll Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ENROLLMENT MODAL ================= -->
+
+    <div
+        class="modal fade"
+        id="enrollmentModal"
+        tabindex="-1"
+        aria-labelledby="enrollmentModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+
+                    <h5
+                        class="modal-title"
+                        id="enrollmentModalLabel">
+
+                        Course Enrollment Form
+
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+
+
+                <!-- Modal Body -->
+
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <!-- Student Name + Email -->
+
+                        <div class="row">
+
+                            <!-- Student Name -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="studentName"
+                                    class="form-label">
+
+                                    Student Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="studentName"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Email -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="studentEmail"
+                                    class="form-label">
+
+                                    Email
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="studentEmail"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone + Course -->
+
+                        <div class="row">
+
+                            <!-- Phone -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="phone"
+                                    class="form-label">
+
+                                    Phone
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Course Name -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="courseName"
+                                    class="form-label">
+
+                                    Course Name
+
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="courseName"
+                                    required>
+
+                                    <option selected disabled>
+                                        Select course
+                                    </option>
+
+                                    <option>
+                                        Web Development
+                                    </option>
+
+                                    <option>
+                                        Python Programming
+                                    </option>
+
+                                    <option>
+                                        React JS
+                                    </option>
+
+                                    <option>
+                                        Artificial Intelligence
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Learning Mode -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Learning Mode
+                            </label>
+
+                            <div class="form-check">
+
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="learningMode"
+                                    id="online"
+                                    value="online"
+                                    checked>
+
+                                <label
+                                    class="form-check-label"
+                                    for="online">
+
+                                    Online
+
+                                </label>
+
+                            </div>
+
+                            <div class="form-check">
+
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="learningMode"
+                                    id="offline"
+                                    value="offline">
+
+                                <label
+                                    class="form-check-label"
+                                    for="offline">
+
+                                    Offline
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Preferred Batch -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="batch"
+                                class="form-label">
+
+                                Preferred Batch
+
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="batch"
+                                required>
+
+                                <option selected disabled>
+                                    Select preferred batch
+                                </option>
+
+                                <option>
+                                    Morning - 9:00 AM
+                                </option>
+
+                                <option>
+                                    Afternoon - 2:00 PM
+                                </option>
+
+                                <option>
+                                    Evening - 6:00 PM
+                                </option>
+
+                                <option>
+                                    Weekend - 10:00 AM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+                <!-- Modal Footer -->
+
+                <div class="modal-footer">
+
+                    <!-- Close Button -->
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+
+                    <!-- Enroll Button -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Enroll
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <p class="mb-0">
+            © 2026 LearnOnline. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

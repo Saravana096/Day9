@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #212529, #495057);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        /* Information Section */
+        .info-section {
+            padding: 60px 20px;
+        }
+
+        .info-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Modal Header */
+        .modal-header {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .modal-header .btn-close {
+            filter: brightness(0) invert(1);
+        }
+
+        .form-section-title {
+            color: #0d6efd;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">
+                💼 CareerPortal
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#jobNavbar"
+                aria-controls="jobNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="jobNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Jobs
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                        <!-- Apply Now Button -->
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#jobApplicationModal">
+
+                            Apply Now
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Build Your Career With Us 🚀</h1>
+
+            <p class="lead">
+                Find exciting opportunities and take the next step in your career.
+            </p>
+
+            <button
+                type="button"
+                class="btn btn-light btn-lg mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#jobApplicationModal">
+
+                Apply Now
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INFORMATION ================= -->
+
+    <section class="info-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8">
+
+                    <div class="info-card text-center">
+
+                        <h2 class="mb-4">
+                            Join Our Team
+                        </h2>
+
+                        <p>
+                            We are looking for talented and motivated
+                            professionals to join our growing team.
+                        </p>
+
+                        <p>
+                            Submit your application and our recruitment
+                            team will review your profile.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-success"
+                            data-bs-toggle="modal"
+                            data-bs-target="#jobApplicationModal">
+
+                            Start Application
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JOB APPLICATION MODAL ================= -->
+
+    <div
+        class="modal fade"
+        id="jobApplicationModal"
+        tabindex="-1"
+        aria-labelledby="jobApplicationModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+
+                    <h5
+                        class="modal-title"
+                        id="jobApplicationModalLabel">
+
+                        Online Job Application
+
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+
+
+                <!-- Modal Body -->
+
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <h6 class="form-section-title">
+                            Personal Information
+                        </h6>
+
+
+                        <!-- Full Name + Email -->
+
+                        <div class="row">
+
+                            <!-- Full Name -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="fullName"
+                                    class="form-label">
+
+                                    Full Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="fullName"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Email -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="email"
+                                    class="form-label">
+
+                                    Email
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone + Qualification -->
+
+                        <div class="row">
+
+                            <!-- Phone -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="phone"
+                                    class="form-label">
+
+                                    Phone Number
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Qualification -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="qualification"
+                                    class="form-label">
+
+                                    Qualification
+
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="qualification"
+                                    required>
+
+                                    <option selected disabled>
+                                        Select qualification
+                                    </option>
+
+                                    <option>
+                                        BCA
+                                    </option>
+
+                                    <option>
+                                        B.Sc Computer Science
+                                    </option>
+
+                                    <option>
+                                        B.E / B.Tech
+                                    </option>
+
+                                    <option>
+                                        M.C.A
+                                    </option>
+
+                                    <option>
+                                        M.Sc
+                                    </option>
+
+                                    <option>
+                                        MBA
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Experience + Skills -->
+
+                        <div class="row">
+
+                            <!-- Experience -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="experience"
+                                    class="form-label">
+
+                                    Experience
+
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="experience"
+                                    required>
+
+                                    <option selected disabled>
+                                        Select experience
+                                    </option>
+
+                                    <option>
+                                        Fresher
+                                    </option>
+
+                                    <option>
+                                        1 - 2 Years
+                                    </option>
+
+                                    <option>
+                                        3 - 5 Years
+                                    </option>
+
+                                    <option>
+                                        5+ Years
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Skills -->
+
+                            <div class="col-12 col-md-6 mb-3">
+
+                                <label
+                                    for="skills"
+                                    class="form-label">
+
+                                    Skills
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="skills"
+                                    placeholder="HTML, CSS, JavaScript, Python">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Resume Upload -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="resume"
+                                class="form-label">
+
+                                Resume
+
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                id="resume"
+                                accept=".pdf,.doc,.docx"
+                                required>
+
+                        </div>
+
+
+                        <!-- Cover Letter -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="coverLetter"
+                                class="form-label">
+
+                                Cover Letter
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="coverLetter"
+                                rows="5"
+                                placeholder="Write your cover letter here..."
+                                required></textarea>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+                <!-- Modal Footer -->
+
+                <div class="modal-footer">
+
+                    <!-- Cancel Button -->
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cancel
+
+                    </button>
+
+
+                    <!-- Submit Application Button -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Submit Application
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <p class="mb-0">
+            © 2026 CareerPortal. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
