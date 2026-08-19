@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <body class="bg-orange-50">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="bg-red-600 text-white shadow-lg">
+
+        <div class="max-w-7xl mx-auto px-6 py-4">
+
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+
+                <!-- Restaurant Name -->
+
+                <div class="flex items-center">
+
+                    <div class="bg-yellow-400 text-red-700 rounded-full p-2 mr-3">
+                        🍽️
+                    </div>
+
+                    <h1 class="text-2xl font-bold">
+                        Spice Garden
+                    </h1>
+
+                </div>
+
+
+                <!-- Navigation -->
+
+                <div class="flex flex-col md:flex-row mt-3 md:mt-0">
+
+                    <a
+                        href="#"
+                        class="px-4 py-2 rounded-lg hover:bg-red-700">
+
+                        Home
+
+                    </a>
+
+                    <a
+                        href="#menu"
+                        class="px-4 py-2 rounded-lg hover:bg-red-700">
+
+                        Menu
+
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="px-4 py-2 rounded-lg hover:bg-red-700">
+
+                        About
+
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="px-4 py-2 rounded-lg hover:bg-red-700">
+
+                        Contact
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="bg-yellow-400 text-red-800 text-center py-16 px-6">
+
+        <div class="max-w-4xl mx-auto">
+
+            <h2 class="text-4xl md:text-5xl font-bold">
+                Welcome to Spice Garden 🍴
+            </h2>
+
+            <p class="mt-4 text-lg">
+                Delicious food made with fresh ingredients and love.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOD MENU ================= -->
+
+    <section id="menu" class="max-w-7xl mx-auto px-6 py-12">
+
+        <h2 class="text-4xl font-bold text-center text-red-700 mb-10">
+            Our Food Menu
+        </h2>
+
+
+        <!-- Responsive Grid -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+            <!-- ================= FOOD 1 ================= -->
+
+            <div
+                class="bg-white rounded-2xl shadow-lg overflow-hidden
+                       hover:shadow-2xl hover:-translate-y-2
+                       transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                    alt="Pizza"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-red-700">
+                        Margherita Pizza
+                    </h3>
+
+                    <p class="mt-2 text-gray-600">
+                        Fresh tomato sauce, mozzarella cheese
+                        and delicious Italian herbs.
+                    </p>
+
+                    <p class="mt-4 text-2xl font-bold text-green-600">
+                        ₹299
+                    </p>
+
+                    <button
+                        class="mt-5 w-full bg-red-600 text-white
+                               py-3 px-5 rounded-lg shadow-md
+                               hover:bg-red-800
+                               transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 2 ================= -->
+
+            <div
+                class="bg-yellow-50 rounded-2xl shadow-lg overflow-hidden
+                       hover:shadow-2xl hover:-translate-y-2
+                       transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                    alt="Samosa"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-orange-700">
+                        Crispy Samosa
+                    </h3>
+
+                    <p class="mt-2 text-gray-600">
+                        Golden crispy samosas filled with
+                        spiced potatoes and peas.
+                    </p>
+
+                    <p class="mt-4 text-2xl font-bold text-green-600">
+                        ₹80
+                    </p>
+
+                    <button
+                        class="mt-5 w-full bg-orange-500 text-white
+                               py-3 px-5 rounded-lg shadow-md
+                               hover:bg-orange-700
+                               transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 3 ================= -->
+
+            <div
+                class="bg-green-50 rounded-2xl shadow-lg overflow-hidden
+                       hover:shadow-2xl hover:-translate-y-2
+                       transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1589302168068-964664d93dc0"
+                    alt="Biryani"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-green-700">
+                        Chicken Biryani
+                    </h3>
+
+                    <p class="mt-2 text-gray-600">
+                        Aromatic basmati rice cooked with
+                        tender chicken and special spices.
+                    </p>
+
+                    <p class="mt-4 text-2xl font-bold text-green-600">
+                        ₹249
+                    </p>
+
+                    <button
+                        class="mt-5 w-full bg-green-600 text-white
+                               py-3 px-5 rounded-lg shadow-md
+                               hover:bg-green-800
+                               transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 4 ================= -->
+
+            <div
+                class="bg-blue-50 rounded-2xl shadow-lg overflow-hidden
+                       hover:shadow-2xl hover:-translate-y-2
+                       transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7"
+                    alt="Dosa"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-blue-700">
+                        Masala Dosa
+                    </h3>
+
+                    <p class="mt-2 text-gray-600">
+                        Crispy South Indian dosa served with
+                        potato masala, sambar and chutney.
+                    </p>
+
+                    <p class="mt-4 text-2xl font-bold text-green-600">
+                        ₹120
+                    </p>
+
+                    <button
+                        class="mt-5 w-full bg-blue-600 text-white
+                               py-3 px-5 rounded-lg shadow-md
+                               hover:bg-blue-800
+                               transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 5 ================= -->
+
+            <div
+                class="bg-pink-50 rounded-2xl shadow-lg overflow-hidden
+                       hover:shadow-2xl hover:-translate-y-2
+                       transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+                    alt="Donuts"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-pink-700">
+                        Chocolate Donuts
+                    </h3>
+
+                    <p class="mt-2 text-gray-600">
+                        Soft and delicious donuts topped with
+                        rich chocolate glaze.
+                    </p>
+
+                    <p class="mt-4 text-2xl font-bold text-green-600">
+                        ₹150
+                    </p>
+
+                    <button
+                        class="mt-5 w-full bg-pink-600 text-white
+                               py-3 px-5 rounded-lg shadow-md
+                               hover:bg-pink-800
+                               transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOOD 6 ================= -->
+
+            <div
+                class="bg-purple-50 rounded-2xl shadow-lg overflow-hidden
+                       hover:shadow-2xl hover:-translate-y-2
+                       transition duration-300">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024601-bec78aea704b"
+                    alt="Ice Cream"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-2xl font-bold text-purple-700">
+                        Vanilla Ice Cream
+                    </h3>
+
+                    <p class="mt-2 text-gray-600">
+                        Creamy vanilla ice cream served with
+                        chocolate syrup and toppings.
+                    </p>
+
+                    <p class="mt-4 text-2xl font-bold text-green-600">
+                        ₹100
+                    </p>
+
+                    <button
+                        class="mt-5 w-full bg-purple-600 text-white
+                               py-3 px-5 rounded-lg shadow-md
+                               hover:bg-purple-800
+                               transition duration-300">
+
+                        Order Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="bg-white py-16 px-6">
+
+        <div class="max-w-4xl mx-auto text-center">
+
+            <h2 class="text-3xl font-bold text-red-700">
+                About Spice Garden
+            </h2>
+
+            <p class="mt-4 text-gray-600 leading-relaxed">
+
+                Spice Garden is a family restaurant serving delicious
+                Indian and international dishes prepared with fresh
+                ingredients and traditional flavors.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="bg-orange-100 py-16 px-6">
+
+        <div class="max-w-2xl mx-auto text-center">
+
+            <h2 class="text-3xl font-bold text-orange-800">
+                Contact Us
+            </h2>
+
+            <p class="mt-4 text-gray-700">
+                📍 Chennai, Tamil Nadu
+            </p>
+
+            <p class="mt-2 text-gray-700">
+                📞 +91 98765 43210
+            </p>
+
+            <p class="mt-2 text-gray-700">
+                📧 info@spicegarden.com
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-red-700 text-white text-center p-5">
+
+        <p>
+            © 2026 Spice Garden. All Rights Reserved.
+        </p>
+
+    </footer>
+</body>
+</html>
