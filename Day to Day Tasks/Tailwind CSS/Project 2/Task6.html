@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Tailwind Profile Card</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="./dist/output.css">
+
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Custom Tailwind Configuration -->
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        primary: "#4F46E5",
+
+                        secondary: "#7C3AED",
+
+                        profileBg: "#F5F3FF",
+
+                        darkText: "#1E1B4B"
+
+                    },
+
+                    fontFamily: {
+
+                        profile: ["Poppins", "sans-serif"]
+
+                    },
+
+                    borderRadius: {
+
+                        profile: "30px"
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+
+<body
+    class="bg-profileBg
+           min-h-screen
+           flex
+           items-center
+           justify-center
+           p-6
+           font-profile">
+
+
+    <!-- ================= PROFILE CARD ================= -->
+
+    <div
+        class="w-full
+               max-w-sm
+               bg-white
+               rounded-profile
+               shadow-2xl
+               overflow-hidden
+               border-4
+               border-primary
+               hover:-translate-y-2
+               hover:shadow-2xl
+               transition
+               duration-300">
+
+
+        <!-- Profile Header -->
+
+        <div
+            class="bg-gradient-to-r
+                   from-primary
+                   to-secondary
+                   h-32
+                   relative">
+
+
+            <!-- Profile Image -->
+
+            <div
+                class="absolute
+                       left-1/2
+                       transform
+                       -translate-x-1/2
+                       top-14">
+
+                <img
+                    src="profile.jpeg"
+                    alt="Profile Photo"
+                    class="w-28
+                           h-28
+                           rounded-full
+                           object-cover
+                           border-4
+                           border-white
+                           shadow-lg">
+
+            </div>
+
+        </div>
+
+
+        <!-- Profile Information -->
+
+        <div
+            class="pt-16
+                   px-6
+                   pb-6
+                   text-center">
+
+
+            <!-- Name -->
+
+            <h1
+                class="text-2xl
+                       font-bold
+                       text-darkText">
+
+                Saravanakumar V
+
+            </h1>
+
+
+            <!-- Job Title -->
+
+            <p
+                class="text-primary
+                       font-semibold
+                       mt-1">
+
+                Python Full Stack Developer
+
+            </p>
+
+
+            <!-- Description -->
+
+            <p
+                class="text-gray-600
+                       text-sm
+                       leading-relaxed
+                       mt-4">
+
+                Passionate developer focused on building
+                responsive websites and modern web
+                applications using frontend and backend
+                technologies.
+
+            </p>
+
+
+            <!-- Skills -->
+
+            <div
+                class="flex
+                       flex-wrap
+                       justify-center
+                       gap-2
+                       mt-5">
+
+
+                <span
+                    class="bg-primary
+                           text-white
+                           px-3 py-1
+                           rounded-full
+                           text-sm">
+
+                    HTML
+
+                </span>
+
+
+                <span
+                    class="bg-secondary
+                           text-white
+                           px-3 py-1
+                           rounded-full
+                           text-sm">
+
+                    CSS
+
+                </span>
+
+
+                <span
+                    class="bg-green-600
+                           text-white
+                           px-3 py-1
+                           rounded-full
+                           text-sm">
+
+                    Python
+
+                </span>
+
+
+                <span
+                    class="bg-orange-500
+                           text-white
+                           px-3 py-1
+                           rounded-full
+                           text-sm">
+
+                    JavaScript
+
+                </span>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div
+                class="flex
+                       gap-3
+                       mt-6">
+
+
+                <button
+                    class="flex-1
+                           bg-primary
+                           text-white
+                           py-3
+                           rounded-lg
+                           font-semibold
+                           hover:bg-secondary
+                           transition">
+
+                    Contact
+
+                </button>
+
+
+                <button
+                    class="flex-1
+                           border-2
+                           border-primary
+                           text-primary
+                           py-3
+                           rounded-lg
+                           font-semibold
+                           hover:bg-primary
+                           hover:text-white
+                           transition">
+
+                    Profile
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

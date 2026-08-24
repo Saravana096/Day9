@@ -2400,6 +2400,34 @@ a {
 }
 
 
+.skill-level-90 {
+
+    --level: 90%;
+
+}
+
+
+.skill-level-95 {
+
+    --level: 95%;
+
+}
+
+
+.skill-level-75 {
+
+    --level: 75%;
+
+}
+
+
+.skill-level-80 {
+
+    --level: 80%;
+
+}
+
+
 @keyframes stackLoad {
 
     from {

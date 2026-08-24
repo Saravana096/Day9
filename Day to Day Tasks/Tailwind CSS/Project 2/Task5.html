@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+
+    <!-- ================================================= -->
+    <!-- MOBILE HEADER -->
+    <!-- ================================================= -->
+
+    <!--
+        Mobile:
+        block → visible
+
+        Large screen:
+        lg:hidden → hidden
+    -->
+
+    <header
+        class="block lg:hidden
+               bg-gray-900
+               text-white
+               p-4
+               shadow-md">
+
+        <div
+            class="flex
+                   items-center
+                   justify-between">
+
+            <!-- Logo -->
+
+            <h1
+                class="text-xl
+                       font-bold
+                       text-blue-400">
+
+                📊 Admin Dashboard
+
+            </h1>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="bg-blue-600
+                       px-3 py-2
+                       rounded-lg
+                       text-white
+                       hover:bg-blue-700">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- MAIN DASHBOARD LAYOUT -->
+    <!-- ================================================= -->
+
+    <div class="min-h-screen flex">
+
+
+        <!-- ================================================= -->
+        <!-- SIDEBAR -->
+        <!-- ================================================= -->
+
+        <!--
+            Mobile / Tablet:
+            hidden
+
+            Large screen:
+            lg:block → visible
+        -->
+
+        <aside
+            class="hidden lg:block
+                   lg:w-64
+                   bg-gray-900
+                   text-white
+                   min-h-screen
+                   p-6
+                   flex-shrink-0">
+
+
+            <!-- Sidebar Logo -->
+
+            <div class="mb-10">
+
+                <h2
+                    class="text-2xl
+                           font-bold
+                           text-blue-400">
+
+                    Admin Panel
+
+                </h2>
+
+                <p
+                    class="text-gray-400
+                           mt-1
+                           text-sm">
+
+                    Management Dashboard
+
+                </p>
+
+            </div>
+
+
+            <!-- Sidebar Navigation -->
+
+            <nav class="space-y-3">
+
+
+                <!-- Dashboard -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           bg-blue-600
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-blue-700">
+
+                    📊
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <!-- Students -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-gray-700">
+
+                    🎓
+
+                    <span>
+                        Students
+                    </span>
+
+                </a>
+
+
+                <!-- Courses -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-gray-700">
+
+                    📚
+
+                    <span>
+                        Courses
+                    </span>
+
+                </a>
+
+
+                <!-- Trainers -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-gray-700">
+
+                    👨‍🏫
+
+                    <span>
+                        Trainers
+                    </span>
+
+                </a>
+
+
+                <!-- Projects -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-gray-700">
+
+                    💻
+
+                    <span>
+                        Projects
+                    </span>
+
+                </a>
+
+
+                <!-- Reports -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-gray-700">
+
+                    📈
+
+                    <span>
+                        Reports
+                    </span>
+
+                </a>
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="flex
+                           items-center
+                           gap-3
+                           px-4 py-3
+                           rounded-lg
+                           hover:bg-gray-700">
+
+                    ⚙️
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div
+                class="mt-10
+                       border-t
+                       border-gray-700
+                       pt-6">
+
+                <p
+                    class="text-gray-400
+                           text-sm">
+
+                    Logged in as
+
+                </p>
+
+                <p
+                    class="font-semibold
+                           mt-1">
+
+                    Admin User
+
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================================================= -->
+        <!-- MAIN CONTENT -->
+        <!-- ================================================= -->
+
+        <main
+            class="flex-1
+                   p-4
+                   sm:p-6
+                   md:p-8
+                   lg:p-10">
+
+
+            <!-- ================================================= -->
+            <!-- TOP HEADER -->
+            <!-- ================================================= -->
+
+            <div
+                class="flex
+                       flex-col
+                       md:flex-row
+                       md:items-center
+                       md:justify-between
+                       gap-4
+                       mb-8">
+
+
+                <div>
+
+                    <h1
+                        class="text-2xl
+                               md:text-3xl
+                               lg:text-4xl
+                               font-bold">
+
+                        Dashboard
+
+                    </h1>
+
+                    <p
+                        class="text-gray-500
+                               mt-1">
+
+                        Welcome back, Admin!
+
+                    </p>
+
+                </div>
+
+
+                <!-- Date -->
+
+                <div
+                    class="bg-white
+                           px-4 py-3
+                           rounded-lg
+                           shadow-sm">
+
+                    📅 August 2026
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- DASHBOARD CARDS -->
+            <!-- ================================================= -->
+
+            <!--
+                Mobile → 1 column
+                md     → 2 columns
+                lg     → 4 columns
+            -->
+
+            <div
+                class="grid
+                       grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-4
+                       gap-6
+                       mb-10">
+
+
+                <!-- ================= STUDENTS ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           border-l-4
+                           border-blue-500
+                           hover:shadow-xl
+                           transition">
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between">
+
+                        <div>
+
+                            <p
+                                class="text-gray-500
+                                       text-sm">
+
+                                Total Students
+
+                            </p>
+
+                            <h2
+                                class="text-3xl
+                                       font-bold
+                                       mt-2">
+
+                                1,250
+
+                            </h2>
+
+                        </div>
+
+                        <div
+                            class="bg-blue-100
+                                   text-blue-600
+                                   p-4
+                                   rounded-full
+                                   text-2xl">
+
+                            🎓
+
+                        </div>
+
+                    </div>
+
+                    <p
+                        class="text-green-600
+                               text-sm
+                               mt-4">
+
+                        ↑ 12% from last month
+
+                    </p>
+
+                </div>
+
+
+                <!-- ================= COURSES ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           border-l-4
+                           border-green-500
+                           hover:shadow-xl
+                           transition">
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between">
+
+                        <div>
+
+                            <p
+                                class="text-gray-500
+                                       text-sm">
+
+                                Total Courses
+
+                            </p>
+
+                            <h2
+                                class="text-3xl
+                                       font-bold
+                                       mt-2">
+
+                                48
+
+                            </h2>
+
+                        </div>
+
+                        <div
+                            class="bg-green-100
+                                   text-green-600
+                                   p-4
+                                   rounded-full
+                                   text-2xl">
+
+                            📚
+
+                        </div>
+
+                    </div>
+
+                    <p
+                        class="text-green-600
+                               text-sm
+                               mt-4">
+
+                        ↑ 8% from last month
+
+                    </p>
+
+                </div>
+
+
+                <!-- ================= TRAINERS ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           border-l-4
+                           border-purple-500
+                           hover:shadow-xl
+                           transition">
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between">
+
+                        <div>
+
+                            <p
+                                class="text-gray-500
+                                       text-sm">
+
+                                Total Trainers
+
+                            </p>
+
+                            <h2
+                                class="text-3xl
+                                       font-bold
+                                       mt-2">
+
+                                32
+
+                            </h2>
+
+                        </div>
+
+                        <div
+                            class="bg-purple-100
+                                   text-purple-600
+                                   p-4
+                                   rounded-full
+                                   text-2xl">
+
+                            👨‍🏫
+
+                        </div>
+
+                    </div>
+
+                    <p
+                        class="text-green-600
+                               text-sm
+                               mt-4">
+
+                        ↑ 5% from last month
+
+                    </p>
+
+                </div>
+
+
+                <!-- ================= PROJECTS ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           border-l-4
+                           border-orange-500
+                           hover:shadow-xl
+                           transition">
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between">
+
+                        <div>
+
+                            <p
+                                class="text-gray-500
+                                       text-sm">
+
+                                Completed Projects
+
+                            </p>
+
+                            <h2
+                                class="text-3xl
+                                       font-bold
+                                       mt-2">
+
+                                86
+
+                            </h2>
+
+                        </div>
+
+                        <div
+                            class="bg-orange-100
+                                   text-orange-600
+                                   p-4
+                                   rounded-full
+                                   text-2xl">
+
+                            💻
+
+                        </div>
+
+                    </div>
+
+                    <p
+                        class="text-green-600
+                               text-sm
+                               mt-4">
+
+                        ↑ 15% from last month
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- RECENT ACTIVITY -->
+            <!-- ================================================= -->
+
+            <div
+                class="bg-white
+                       rounded-xl
+                       shadow-md
+                       overflow-hidden">
+
+
+                <!-- Section Header -->
+
+                <div
+                    class="p-6
+                           border-b
+                           border-gray-200">
+
+                    <div
+                        class="flex
+                               flex-col
+                               sm:flex-row
+                               sm:items-center
+                               sm:justify-between
+                               gap-3">
+
+                        <div>
+
+                            <h2
+                                class="text-xl
+                                       md:text-2xl
+                                       font-bold">
+
+                                Recent Activity
+
+                            </h2>
+
+                            <p
+                                class="text-gray-500
+                                       text-sm
+                                       mt-1">
+
+                                Latest updates from the platform
+
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="bg-blue-600
+                                   text-white
+                                   px-4 py-2
+                                   rounded-lg
+                                   hover:bg-blue-700">
+
+                            View All
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- RESPONSIVE TABLE -->
+                <!-- ================================================= -->
+
+                <!--
+                    overflow-x-auto allows the table
+                    to scroll horizontally on small screens.
+                -->
+
+                <div class="overflow-x-auto">
+
+                    <table
+                        class="w-full
+                               min-w-[700px]">
+
+
+                        <!-- Table Header -->
+
+                        <thead
+                            class="bg-gray-50">
+
+                            <tr>
+
+                                <th
+                                    class="text-left
+                                           px-6 py-4
+                                           text-sm
+                                           font-semibold
+                                           text-gray-600">
+
+                                    Student
+
+                                </th>
+
+                                <th
+                                    class="text-left
+                                           px-6 py-4
+                                           text-sm
+                                           font-semibold
+                                           text-gray-600">
+
+                                    Activity
+
+                                </th>
+
+                                <th
+                                    class="text-left
+                                           px-6 py-4
+                                           text-sm
+                                           font-semibold
+                                           text-gray-600">
+
+                                    Course
+
+                                </th>
+
+                                <th
+                                    class="text-left
+                                           px-6 py-4
+                                           text-sm
+                                           font-semibold
+                                           text-gray-600">
+
+                                    Status
+
+                                </th>
+
+                                <th
+                                    class="text-left
+                                           px-6 py-4
+                                           text-sm
+                                           font-semibold
+                                           text-gray-600">
+
+                                    Date
+
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <!-- Table Body -->
+
+                        <tbody
+                            class="divide-y
+                                   divide-gray-200">
+
+
+                            <!-- Row 1 -->
+
+                            <tr
+                                class="hover:bg-gray-50">
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <div
+                                        class="flex
+                                               items-center
+                                               gap-3">
+
+                                        <div
+                                            class="bg-blue-100
+                                                   text-blue-600
+                                                   w-10 h-10
+                                                   rounded-full
+                                                   flex
+                                                   items-center
+                                                   justify-center">
+
+                                            SK
+
+                                        </div>
+
+                                        <span
+                                            class="font-semibold">
+
+                                            Saravanakumar
+
+                                        </span>
+
+                                    </div>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Completed assignment
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Full Stack Development
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <span
+                                        class="bg-green-100
+                                               text-green-700
+                                               px-3 py-1
+                                               rounded-full
+                                               text-sm">
+
+                                        Completed
+
+                                    </span>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-500">
+
+                                    Today
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Row 2 -->
+
+                            <tr
+                                class="hover:bg-gray-50">
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <div
+                                        class="flex
+                                               items-center
+                                               gap-3">
+
+                                        <div
+                                            class="bg-purple-100
+                                                   text-purple-600
+                                                   w-10 h-10
+                                                   rounded-full
+                                                   flex
+                                                   items-center
+                                                   justify-center">
+
+                                            AK
+
+                                        </div>
+
+                                        <span
+                                            class="font-semibold">
+
+                                            Arun Kumar
+
+                                        </span>
+
+                                    </div>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Enrolled in course
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Python Development
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <span
+                                        class="bg-blue-100
+                                               text-blue-700
+                                               px-3 py-1
+                                               rounded-full
+                                               text-sm">
+
+                                        Active
+
+                                    </span>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-500">
+
+                                    Yesterday
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Row 3 -->
+
+                            <tr
+                                class="hover:bg-gray-50">
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <div
+                                        class="flex
+                                               items-center
+                                               gap-3">
+
+                                        <div
+                                            class="bg-orange-100
+                                                   text-orange-600
+                                                   w-10 h-10
+                                                   rounded-full
+                                                   flex
+                                                   items-center
+                                                   justify-center">
+
+                                            PS
+
+                                        </div>
+
+                                        <span
+                                            class="font-semibold">
+
+                                            Priya Sharma
+
+                                        </span>
+
+                                    </div>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Submitted project
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Web Development
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <span
+                                        class="bg-yellow-100
+                                               text-yellow-700
+                                               px-3 py-1
+                                               rounded-full
+                                               text-sm">
+
+                                        Pending
+
+                                    </span>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-500">
+
+                                    2 Days Ago
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Row 4 -->
+
+                            <tr
+                                class="hover:bg-gray-50">
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <div
+                                        class="flex
+                                               items-center
+                                               gap-3">
+
+                                        <div
+                                            class="bg-green-100
+                                                   text-green-600
+                                                   w-10 h-10
+                                                   rounded-full
+                                                   flex
+                                                   items-center
+                                                   justify-center">
+
+                                            RM
+
+                                        </div>
+
+                                        <span
+                                            class="font-semibold">
+
+                                            Rahul Menon
+
+                                        </span>
+
+                                    </div>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    Completed project
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-600">
+
+                                    React JS
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4">
+
+                                    <span
+                                        class="bg-green-100
+                                               text-green-700
+                                               px-3 py-1
+                                               rounded-full
+                                               text-sm">
+
+                                        Completed
+
+                                    </span>
+
+                                </td>
+
+                                <td
+                                    class="px-6 py-4
+                                           text-gray-500">
+
+                                    3 Days Ago
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- QUICK STATS -->
+            <!-- ================================================= -->
+
+            <div
+                class="grid
+                       grid-cols-1
+                       md:grid-cols-3
+                       gap-6
+                       mt-8">
+
+
+                <!-- Attendance -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6">
+
+                    <h3
+                        class="font-bold
+                               text-lg">
+
+                        Student Attendance
+
+                    </h3>
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               mt-4">
+
+                        <span
+                            class="text-3xl
+                                   font-bold
+                                   text-green-600">
+
+                            92%
+
+                        </span>
+
+                        <span
+                            class="text-green-600">
+
+                            Excellent
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course Completion -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6">
+
+                    <h3
+                        class="font-bold
+                               text-lg">
+
+                        Course Completion
+
+                    </h3>
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               mt-4">
+
+                        <span
+                            class="text-3xl
+                                   font-bold
+                                   text-blue-600">
+
+                            78%
+
+                        </span>
+
+                        <span
+                            class="text-blue-600">
+
+                            Good
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project Success -->
+
+                <div
+                    class="bg-white
+                           rounded-xl
+                           shadow-md
+                           p-6">
+
+                    <h3
+                        class="font-bold
+                               text-lg">
+
+                        Project Success
+
+                    </h3>
+
+                    <div
+                        class="flex
+                               items-center
+                               justify-between
+                               mt-4">
+
+                        <span
+                            class="text-3xl
+                                   font-bold
+                                   text-purple-600">
+
+                            89%
+
+                        </span>
+
+                        <span
+                            class="text-purple-600">
+
+                            Excellent
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <footer
+        class="bg-gray-900
+               text-white
+               text-center
+               p-5
+               lg:ml-64">
+
+        <p
+            class="text-gray-400">
+
+            © 2026 Admin Dashboard. All Rights Reserved.
+
+        </p>
+
+    </footer>
+    
+</body>
+</html>

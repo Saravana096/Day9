@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="bg-gray-900 text-white shadow-lg">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+
+            <div class="flex flex-col md:flex-row
+                        md:items-center
+                        md:justify-between">
+
+                <!-- Logo -->
+
+                <a
+                    href="#home"
+                    class="text-2xl font-bold text-blue-400">
+
+                    SK Portfolio
+
+                </a>
+
+
+                <!-- Navigation Links -->
+
+                <div class="flex flex-col md:flex-row
+                            mt-3 md:mt-0">
+
+                    <a
+                        href="#home"
+                        class="px-4 py-2 rounded-lg
+                               hover:bg-gray-700
+                               transition">
+
+                        Home
+
+                    </a>
+
+                    <a
+                        href="#skills"
+                        class="px-4 py-2 rounded-lg
+                               hover:bg-gray-700
+                               transition">
+
+                        Skills
+
+                    </a>
+
+                    <a
+                        href="#projects"
+                        class="px-4 py-2 rounded-lg
+                               hover:bg-gray-700
+                               transition">
+
+                        Projects
+
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="px-4 py-2 rounded-lg
+                               hover:bg-gray-700
+                               transition">
+
+                        Contact
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section
+        id="home"
+        class="bg-gradient-to-r from-blue-600 to-purple-700
+               text-white px-4 sm:px-6
+               py-12 md:py-16 lg:py-24">
+
+
+        <!--
+            Mobile:
+            flex-col → vertical
+
+            Tablet/Desktop:
+            md:flex-row → horizontal
+        -->
+
+        <div
+            class="max-w-7xl mx-auto
+                   flex flex-col md:flex-row
+                   items-center
+                   justify-between
+                   gap-8 md:gap-12">
+
+
+            <!-- ================= PROFILE IMAGE ================= -->
+
+            <div
+                class="w-full md:w-1/3
+                       flex justify-center
+                       order-1 md:order-2">
+
+                <img
+                    src="profile.jpeg"
+                    alt="Profile Photo"
+                    class="w-40 h-40
+                           sm:w-48 sm:h-48
+                           md:w-56 md:h-56
+                           lg:w-72 lg:h-72
+                           rounded-full
+                           object-cover
+                           border-4 border-white
+                           shadow-2xl">
+
+            </div>
+
+
+            <!-- ================= HERO INFORMATION ================= -->
+
+            <div
+                class="w-full md:w-2/3
+                       text-center md:text-left
+                       order-2 md:order-1">
+
+                <p
+                    class="text-blue-200
+                           text-lg md:text-xl
+                           font-semibold">
+
+                    Hello, I'm
+
+                </p>
+
+
+                <h1
+                    class="text-4xl
+                           sm:text-5xl
+                           md:text-5xl
+                           lg:text-6xl
+                           font-bold
+                           mt-2">
+
+                    Saravanakumar V
+
+                </h1>
+
+
+                <h2
+                    class="text-xl
+                           sm:text-2xl
+                           md:text-3xl
+                           font-semibold
+                           text-yellow-300
+                           mt-4">
+
+                    Python Full Stack Developer
+
+                </h2>
+
+
+                <p
+                    class="mt-5
+                           text-base
+                           md:text-lg
+                           lg:text-xl
+                           text-blue-100
+                           leading-relaxed
+                           max-w-2xl
+                           mx-auto md:mx-0">
+
+                    I am passionate about building responsive,
+                    user-friendly and modern web applications.
+                    I enjoy learning new technologies and
+                    creating practical solutions.
+
+                </p>
+
+
+                <!-- Button -->
+
+                <a
+                    href="#projects"
+                    class="inline-block
+                           mt-7
+                           bg-white
+                           text-blue-700
+                           px-6 py-3
+                           rounded-lg
+                           font-semibold
+                           shadow-lg
+                           hover:bg-gray-100
+                           hover:scale-105
+                           transition duration-300">
+
+                    View My Projects
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+
+    <section
+        id="skills"
+        class="bg-white
+               px-4 sm:px-6
+               py-12 md:py-16 lg:py-20">
+
+
+        <div class="max-w-7xl mx-auto">
+
+
+            <!-- Heading -->
+
+            <div class="text-center">
+
+                <p
+                    class="text-blue-600
+                           font-semibold">
+
+                    MY SKILLS
+
+                </p>
+
+                <h2
+                    class="text-3xl
+                           md:text-4xl
+                           lg:text-5xl
+                           font-bold
+                           mt-2">
+
+                    Technologies I Use
+
+                </h2>
+
+            </div>
+
+
+            <!--
+                Mobile : 1 column
+                Tablet : 2 columns
+                Desktop: 4 columns
+            -->
+
+            <div
+                class="grid
+                       grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-4
+                       gap-6
+                       mt-10">
+
+
+                <!-- HTML -->
+
+                <div
+                    class="bg-orange-50
+                           border border-orange-200
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           text-center
+                           hover:shadow-xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div class="text-5xl">
+                        🌐
+                    </div>
+
+                    <h3
+                        class="text-xl
+                               font-bold
+                               text-orange-600
+                               mt-4">
+
+                        HTML
+
+                    </h3>
+
+                    <p
+                        class="text-gray-600
+                               mt-2">
+
+                        Semantic and structured
+                        web development.
+
+                    </p>
+
+                </div>
+
+
+                <!-- CSS -->
+
+                <div
+                    class="bg-blue-50
+                           border border-blue-200
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           text-center
+                           hover:shadow-xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div class="text-5xl">
+                        🎨
+                    </div>
+
+                    <h3
+                        class="text-xl
+                               font-bold
+                               text-blue-600
+                               mt-4">
+
+                        CSS
+
+                    </h3>
+
+                    <p
+                        class="text-gray-600
+                               mt-2">
+
+                        Responsive layouts
+                        and modern styling.
+
+                    </p>
+
+                </div>
+
+
+                <!-- JavaScript -->
+
+                <div
+                    class="bg-yellow-50
+                           border border-yellow-200
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           text-center
+                           hover:shadow-xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div class="text-5xl">
+                        ⚡
+                    </div>
+
+                    <h3
+                        class="text-xl
+                               font-bold
+                               text-yellow-600
+                               mt-4">
+
+                        JavaScript
+
+                    </h3>
+
+                    <p
+                        class="text-gray-600
+                               mt-2">
+
+                        Interactive and dynamic
+                        web applications.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Python -->
+
+                <div
+                    class="bg-green-50
+                           border border-green-200
+                           rounded-xl
+                           shadow-md
+                           p-6
+                           text-center
+                           hover:shadow-xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div class="text-5xl">
+                        🐍
+                    </div>
+
+                    <h3
+                        class="text-xl
+                               font-bold
+                               text-green-600
+                               mt-4">
+
+                        Python
+
+                    </h3>
+
+                    <p
+                        class="text-gray-600
+                               mt-2">
+
+                        Programming and
+                        backend development.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
+    <section
+        id="projects"
+        class="bg-gray-100
+               px-4 sm:px-6
+               py-12 md:py-16 lg:py-20">
+
+
+        <div class="max-w-7xl mx-auto">
+
+
+            <!-- Heading -->
+
+            <div class="text-center">
+
+                <p
+                    class="text-purple-600
+                           font-semibold">
+
+                    MY WORK
+
+                </p>
+
+                <h2
+                    class="text-3xl
+                           md:text-4xl
+                           lg:text-5xl
+                           font-bold
+                           mt-2">
+
+                    My Projects
+
+                </h2>
+
+                <p
+                    class="text-gray-600
+                           mt-3">
+
+                    A few projects I have built while learning
+                    web development.
+
+                </p>
+
+            </div>
+
+
+            <!--
+                Mobile : 1 column
+                Tablet : 2 columns
+                Desktop: 4 columns
+            -->
+
+            <div
+                class="grid
+                       grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-4
+                       gap-6
+                       mt-10">
+
+
+                <!-- ================= PROJECT 1 ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-2xl
+                           shadow-lg
+                           overflow-hidden
+                           hover:shadow-2xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div
+                        class="bg-blue-600
+                               text-white
+                               p-8
+                               text-center">
+
+                        <div class="text-5xl">
+                            🎓
+                        </div>
+
+                        <h3
+                            class="text-xl
+                                   font-bold
+                                   mt-4">
+
+                            Student Profile
+
+                        </h3>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-gray-600">
+
+                            Responsive student profile
+                            website using Tailwind CSS.
+
+                        </p>
+
+                        <button
+                            class="mt-5
+                                   bg-blue-600
+                                   text-white
+                                   px-5 py-2
+                                   rounded-lg
+                                   hover:bg-blue-800
+                                   transition">
+
+                            View Project
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PROJECT 2 ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-2xl
+                           shadow-lg
+                           overflow-hidden
+                           hover:shadow-2xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div
+                        class="bg-green-600
+                               text-white
+                               p-8
+                               text-center">
+
+                        <div class="text-5xl">
+                            🛒
+                        </div>
+
+                        <h3
+                            class="text-xl
+                                   font-bold
+                                   mt-4">
+
+                            Shopping Page
+
+                        </h3>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-gray-600">
+
+                            Responsive product shopping
+                            page with modern cards.
+
+                        </p>
+
+                        <button
+                            class="mt-5
+                                   bg-green-600
+                                   text-white
+                                   px-5 py-2
+                                   rounded-lg
+                                   hover:bg-green-800
+                                   transition">
+
+                            View Project
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PROJECT 3 ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-2xl
+                           shadow-lg
+                           overflow-hidden
+                           hover:shadow-2xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div
+                        class="bg-orange-600
+                               text-white
+                               p-8
+                               text-center">
+
+                        <div class="text-5xl">
+                            🍔
+                        </div>
+
+                        <h3
+                            class="text-xl
+                                   font-bold
+                                   mt-4">
+
+                            Restaurant Menu
+
+                        </h3>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-gray-600">
+
+                            Responsive restaurant menu
+                            with food cards and hover effects.
+
+                        </p>
+
+                        <button
+                            class="mt-5
+                                   bg-orange-600
+                                   text-white
+                                   px-5 py-2
+                                   rounded-lg
+                                   hover:bg-orange-800
+                                   transition">
+
+                            View Project
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PROJECT 4 ================= -->
+
+                <div
+                    class="bg-white
+                           rounded-2xl
+                           shadow-lg
+                           overflow-hidden
+                           hover:shadow-2xl
+                           hover:-translate-y-2
+                           transition duration-300">
+
+                    <div
+                        class="bg-purple-600
+                               text-white
+                               p-8
+                               text-center">
+
+                        <div class="text-5xl">
+                            📚
+                        </div>
+
+                        <h3
+                            class="text-xl
+                                   font-bold
+                                   mt-4">
+
+                            Course Website
+
+                        </h3>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <p
+                            class="text-gray-600">
+
+                            Online course landing page
+                            built with responsive Tailwind utilities.
+
+                        </p>
+
+                        <button
+                            class="mt-5
+                                   bg-purple-600
+                                   text-white
+                                   px-5 py-2
+                                   rounded-lg
+                                   hover:bg-purple-800
+                                   transition">
+
+                            View Project
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section
+        id="contact"
+        class="bg-blue-700
+               text-white
+               px-4 sm:px-6
+               py-12 md:py-16 lg:py-20">
+
+
+        <div class="max-w-5xl mx-auto">
+
+
+            <div class="text-center">
+
+                <h2
+                    class="text-3xl
+                           md:text-4xl
+                           lg:text-5xl
+                           font-bold">
+
+                    Let's Work Together
+
+                </h2>
+
+                <p
+                    class="mt-4
+                           text-blue-100
+                           max-w-2xl
+                           mx-auto">
+
+                    Have a project idea or want to connect?
+                    Feel free to get in touch with me.
+
+                </p>
+
+            </div>
+
+
+            <!-- Contact Details -->
+
+            <div
+                class="grid
+                       grid-cols-1
+                       md:grid-cols-3
+                       gap-6
+                       mt-10">
+
+
+                <div
+                    class="bg-blue-800
+                           rounded-xl
+                           p-6
+                           text-center">
+
+                    <div class="text-3xl">
+                        📧
+                    </div>
+
+                    <h3
+                        class="font-bold
+                               mt-3">
+
+                        Email
+
+                    </h3>
+
+                    <p
+                        class="text-blue-100
+                               mt-1">
+
+                        saravanakumar@example.com
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-blue-800
+                           rounded-xl
+                           p-6
+                           text-center">
+
+                    <div class="text-3xl">
+                        📞
+                    </div>
+
+                    <h3
+                        class="font-bold
+                               mt-3">
+
+                        Phone
+
+                    </h3>
+
+                    <p
+                        class="text-blue-100
+                               mt-1">
+
+                        +91 98765 43210
+
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-blue-800
+                           rounded-xl
+                           p-6
+                           text-center">
+
+                    <div class="text-3xl">
+                        📍
+                    </div>
+
+                    <h3
+                        class="font-bold
+                               mt-3">
+
+                        Location
+
+                    </h3>
+
+                    <p
+                        class="text-blue-100
+                               mt-1">
+
+                        Chennai, Tamil Nadu
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Contact Button -->
+
+            <div class="text-center mt-8">
+
+                <a
+                    href="mailto:saravanakumar@example.com"
+                    class="inline-block
+                           bg-white
+                           text-blue-700
+                           px-6 py-3
+                           rounded-lg
+                           font-semibold
+                           shadow-lg
+                           hover:bg-gray-100
+                           hover:scale-105
+                           transition duration-300">
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+        class="bg-gray-900
+               text-white
+               text-center
+               p-6">
+
+        <h3
+            class="text-xl
+                   font-bold
+                   text-blue-400">
+
+            SK Portfolio
+
+        </h3>
+
+        <p
+            class="text-gray-400
+                   mt-2">
+
+            Building, Learning & Growing 🚀
+
+        </p>
+
+        <p
+            class="text-sm
+                   text-gray-500
+                   mt-4">
+
+            © 2026 Saravanakumar V. All Rights Reserved.
+
+        </p>
+
+    </footer>
+    
+</body>
+</html>
