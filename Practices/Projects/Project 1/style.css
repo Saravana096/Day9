@@ -243,6 +243,9 @@ a {
         1px solid
         var(--line);
 
+    -webkit-backdrop-filter:
+        blur(18px);
+
     backdrop-filter:
         blur(18px);
 
@@ -3742,7 +3745,7 @@ a {
             1fr;
 
         min-height:
-            auto;
+            0;
 
         padding-top:
             150px;
